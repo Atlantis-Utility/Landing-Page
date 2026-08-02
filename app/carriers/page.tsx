@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import CarriersHero from "@/components/carriers/CarriersHero";
 import CarrierCategories from "@/components/carriers/CarrierCategories";
 import NetworkReliability from "@/components/carriers/NetworkReliability";
+import CarrierPartners from "@/components/carriers/CarrierPartners";
 import { CTABanner, Footer } from "@/components/CtaFooter";
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function CarriersPage() {
       <CarriersHero />
       <CarrierCategories />
       <NetworkReliability />
+      <CarrierPartners />
       <CTABanner />
       <Footer />
     </main>

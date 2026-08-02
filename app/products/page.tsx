@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import ProductsHero from "@/components/products/ProductsHero";
 import ProductDetail from "@/components/products/ProductDetail";
+import HardwareGallery from "@/components/products/HardwareGallery";
 import ProductsCTA from "@/components/products/ProductsCTA";
 import { Footer } from "@/components/CtaFooter";
 
@@ -23,6 +24,7 @@ export default function ProductsPage() {
       <Navbar />
       <ProductsHero />
       <ProductDetail />
+      <HardwareGallery />
       <ProductsCTA />
       <Footer />
     </main>
