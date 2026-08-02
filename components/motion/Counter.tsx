@@ -40,7 +40,8 @@ export function Counter({ value, className }: CounterProps) {
 
   return (
     <motion.span ref={ref} className={className}>
-      <span ref={display}>0{suffix}</span>
+      {/* Server-rendered as the real final value so no-JS/crawlers never see "0" */}
+      <span ref={display}>{value}</span>
     </motion.span>
   );
 }

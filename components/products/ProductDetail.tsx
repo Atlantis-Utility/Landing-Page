@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 import { MotionLink } from "@/components/motion/MotionLink";
 
@@ -418,6 +419,7 @@ const products = [
   },
   {
     id:       "nec-phones",
+    photo:    "/atlantis/yealink-cordless.png",
     tag:      "Phone Hardware",
     tagCls:   "bg-blue-50 text-blue-600 border-blue-200",
     title:    "NEC and Yealink Phone Systems",
@@ -446,6 +448,7 @@ const products = [
   },
   {
     id:       "digital-voip",
+    photo:    "/atlantis/cloud-solutions.png",
     tag:      "VoIP Conversion",
     tagCls:   "bg-emerald-50 text-emerald-700 border-emerald-200",
     title:    "Digital to VoIP Conversions",
@@ -460,6 +463,7 @@ const products = [
   },
   {
     id:       "ip-cameras",
+    photo:    "/atlantis/security-cameras.png",
     tag:      "Security Systems",
     tagCls:   "bg-red-50 text-red-600 border-red-200",
     title:    "IP Camera System Installation and Design",
@@ -491,8 +495,12 @@ export default function ProductDetail() {
 
               {/* Illustration */}
               <Reveal className="relative" y={20}>
-                <div className="rounded-3xl overflow-hidden border border-[#E2EDF6] shadow-[0_8px_40px_rgba(27,101,166,0.08)] aspect-[4/3] flex items-center justify-center bg-[#F5F8FC]">
-                  {p.illustration}
+                <div className="relative rounded-3xl overflow-hidden border border-[#E2EDF6] shadow-[0_8px_40px_rgba(27,101,166,0.08)] aspect-[4/3] flex items-center justify-center bg-[#F5F8FC]">
+                  {p.photo ? (
+                    <Image src={p.photo} alt={p.title} fill className="object-cover" />
+                  ) : (
+                    p.illustration
+                  )}
                 </div>
                 {/* Floating tag */}
                 <div className="absolute -bottom-4 -right-4 bg-white border border-[#E2EDF6] rounded-2xl px-4 py-3 shadow-md hidden sm:flex items-center gap-2.5">

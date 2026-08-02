@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { MotionLink } from "@/components/motion/MotionLink";
 
@@ -188,6 +189,12 @@ export default function ContactForm() {
 
           {/* Info panel */}
           <Stagger className="lg:col-span-2 space-y-4">
+            <StaggerItem>
+              <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-[#E2EDF6]">
+                <Image src="/atlantis/managed-it-services.png" alt="Atlantis Utility support team" fill className="object-cover" />
+              </div>
+            </StaggerItem>
+
             <StaggerItem>
               <div className="card p-6 bg-white flex items-start gap-4">
                 <div className="service-icon"><PhoneIcon /></div>

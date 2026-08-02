@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const reasons = [
@@ -51,13 +52,17 @@ export default function TrustReasons() {
 
             {/* Mini CTA */}
             <a href="#contact"
-              className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px] shadow-sm"
+              className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px] shadow-sm mb-8"
               style={{ fontFamily: "var(--font-dm)" }}>
               Talk to a local expert
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </a>
+
+            <div className="relative aspect-video rounded-2xl overflow-hidden border border-[#E2EDF6] hidden lg:block">
+              <Image src="/atlantis/managed-it-services.png" alt="Atlantis Utility support team" fill className="object-cover" />
+            </div>
           </Reveal>
 
           {/* Right: reason cards */}

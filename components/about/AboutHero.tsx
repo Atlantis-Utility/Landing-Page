@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 export default function AboutHero() {
@@ -20,29 +21,37 @@ export default function AboutHero() {
           <span className="text-[#3A5068] font-medium">About Us</span>
         </div>
 
-        <Reveal className="max-w-3xl">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] text-[#1B65A6] text-[12px] font-semibold px-4 py-2 rounded-full mb-6 shadow-sm"
-            style={{ fontFamily: "var(--font-dm)" }}>
-            <span className="w-1.5 h-1.5 rounded-full bg-green-500 pulse-dot" />
-            California owned & operated
-          </div>
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <Reveal>
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] text-[#1B65A6] text-[12px] font-semibold px-4 py-2 rounded-full mb-6 shadow-sm"
+              style={{ fontFamily: "var(--font-dm)" }}>
+              <span className="w-1.5 h-1.5 rounded-full bg-green-500 pulse-dot" />
+              California owned & operated
+            </div>
 
-          <p className="section-label mb-4">About Atlantis Utility</p>
-          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.06] mb-6"
-            style={{ fontFamily: "var(--font-syne)" }}>
-            A local telecom & IT team
-            <br />
-            <span className="text-[#1B65A6]">that actually picks up the phone.</span>
-          </h1>
-          <p className="text-[#4A6278] text-[17px] leading-relaxed max-w-xl"
-            style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
-            Atlantis Utility Inc. is a California-based telecom and IT services provider.
-            We design, install, and support the phone systems, internet connections, and
-            IT infrastructure that businesses across the state depend on every day, with
-            real technicians instead of call centers.
-          </p>
-        </Reveal>
+            <p className="section-label mb-4">About Atlantis Utility</p>
+            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.06] mb-6"
+              style={{ fontFamily: "var(--font-syne)" }}>
+              A local telecom & IT team
+              <br />
+              <span className="text-[#1B65A6]">that actually picks up the phone.</span>
+            </h1>
+            <p className="text-[#4A6278] text-[17px] leading-relaxed max-w-xl"
+              style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+              Atlantis Utility Inc. is a California-based telecom and IT services provider.
+              We design, install, and support the phone systems, internet connections, and
+              IT infrastructure that businesses across the state depend on every day, with
+              real technicians instead of call centers.
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.1} y={20}>
+            <div className="relative aspect-[16/10] rounded-3xl overflow-hidden border border-[#E2EDF6] shadow-[0_20px_60px_rgba(27,101,166,0.13)]">
+              <Image src="/atlantis/managed-it-services.png" alt="Atlantis Utility technician supporting a client" fill className="object-cover" />
+            </div>
+          </Reveal>
+        </div>
       </div>
     </section>
   );

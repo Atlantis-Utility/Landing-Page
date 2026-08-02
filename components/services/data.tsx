@@ -97,6 +97,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "telecom-cost-reduction",
+    heroImage: "/atlantis/business-continuity.png",
     tag: "Cost Savings", tagCls: "bg-blue-50 text-blue-600 border-blue-200",
     title: "Telecom Cost Reduction",
     subtitle: "Lower your monthly bills without cutting features.",
@@ -109,6 +110,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "structured-cabling",
+    heroImage: "/atlantis/networking-solutions.png",
     tag: "Infrastructure", tagCls: "bg-emerald-50 text-emerald-700 border-emerald-200",
     title: "Structured Cabling",
     subtitle: "Fiber and CAT6 cabling for every system you run.",
@@ -134,6 +136,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "custom-software",
+    heroImage: "/atlantis/cloud-solutions.png",
     tag: "Development", tagCls: "bg-amber-50 text-amber-600 border-amber-200",
     title: "Custom Software Development",
     subtitle: "Software built around how your business actually works.",
@@ -146,6 +149,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "help-desk",
+    heroImage: "/atlantis/managed-it-services.png",
     tag: "Support", tagCls: "bg-red-50 text-red-600 border-red-200",
     title: "Help Desk & Desk Support",
     subtitle: "Real people answering, fast, whether it's remote or on-site.",

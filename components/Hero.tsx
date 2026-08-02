@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { EASE, staggerContainer, staggerItem } from "@/components/motion/Reveal";
 import { Counter } from "@/components/motion/Counter";
@@ -95,70 +96,22 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right: UI card */}
+          {/* Right: image */}
           <div className="relative flex justify-center mt-4 lg:mt-0">
-            {/* Main card */}
+            {/* Main photo */}
             <motion.div
               initial={{ opacity: 0, y: 32, scale: 0.96 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.25, ease: EASE }}
-              className="w-full max-w-sm float bg-white rounded-3xl border border-[#E2EDF6] shadow-[0_20px_60px_rgba(27,101,166,0.13)] p-6 relative z-10"
+              className="float relative w-full aspect-[16/10] rounded-3xl overflow-hidden border border-[#E2EDF6] shadow-[0_20px_60px_rgba(27,101,166,0.13)] z-10"
             >
-
-              {/* Card header */}
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-2xl bg-[#EEF4FB] flex items-center justify-center flex-shrink-0">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <rect x="2" y="5" width="16" height="11" rx="2.5" stroke="#1B65A6" strokeWidth="1.4"/>
-                    <path d="M7 5V4a3 3 0 0 1 6 0v1" stroke="#1B65A6" strokeWidth="1.4" strokeLinecap="round"/>
-                    <circle cx="10" cy="10.5" r="1.5" fill="#1B65A6"/>
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-[13px] font-bold text-[#0E1A28]" style={{ fontFamily: "var(--font-syne)" }}>Hosted VoIP PBX</div>
-                  <div className="text-[11px] text-[#7290AA]">Cloud-powered</div>
-                </div>
-                <span className="ml-auto flex items-center gap-1.5 bg-green-50 text-green-600 text-[11px] font-semibold px-3 py-1 rounded-full border border-green-100">
-                  <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                  Live
-                </span>
-              </div>
-
-              {/* Metrics */}
-              <div className="grid grid-cols-3 gap-2.5 mb-5">
-                {[{ label: "Extensions", value: "48" }, { label: "Uptime", value: "99.9%" }, { label: "Lines", value: "12" }].map((s) => (
-                  <div key={s.label} className="bg-[#F5F8FC] rounded-2xl p-3 text-center">
-                    <div className="text-[18px] font-extrabold text-[#1B65A6]" style={{ fontFamily: "var(--font-syne)" }}>{s.value}</div>
-                    <div className="text-[10px] text-[#7290AA] mt-0.5">{s.label}</div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Chart */}
-              <div className="bg-[#F5F8FC] rounded-2xl p-4">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-[11px] font-semibold text-[#3A5068]">Call volume</span>
-                  <span className="text-[10px] text-[#7290AA]">Last 7 days</span>
-                </div>
-                <div className="flex items-end gap-1.5 h-16">
-                  {[40, 65, 48, 82, 70, 90, 74].map((h, i) => (
-                    <div key={i} className="flex-1 flex flex-col gap-0.5 items-center justify-end h-full">
-                      <motion.div
-                        initial={{ height: 0 }}
-                        animate={{ height: `${h}%` }}
-                        transition={{ duration: 0.6, delay: 0.6 + i * 0.06, ease: EASE }}
-                        className="w-full rounded-t-md"
-                        style={{ background: `rgba(27,101,166,${0.25 + i * 0.1})` }}
-                      />
-                    </div>
-                  ))}
-                </div>
-                <div className="flex justify-between mt-2">
-                  {["M","T","W","T","F","S","S"].map((d, i) => (
-                    <div key={i} className="flex-1 text-center text-[9px] text-[#7290AA]">{d}</div>
-                  ))}
-                </div>
-              </div>
+              <Image
+                src="/atlantis/business-voip.png"
+                alt="Business VoIP phone system"
+                fill
+                priority
+                className="object-cover"
+              />
             </motion.div>
 
             {/* Floating badge: LTE */}

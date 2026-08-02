@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const categories = [
@@ -28,21 +29,29 @@ export default function ProductsHero() {
           <span className="text-[#3A5068] font-medium">Products</span>
         </div>
 
-        <Reveal className="max-w-3xl mb-12">
-          <p className="section-label mb-4">Hardware and Technology</p>
-          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.06] mb-6"
-            style={{ fontFamily: "var(--font-syne)" }}>
-            Professional telecom
-            <br />
-            <span className="text-[#1B65A6]">hardware we install.</span>
-          </h1>
-          <p className="text-[#4A6278] text-[17px] leading-relaxed max-w-xl"
-            style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
-            We supply and professionally install the hardware that powers California businesses.
-            Every product is sourced from industry-leading manufacturers and backed by our
-            local installation and support team.
-          </p>
-        </Reveal>
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-12">
+          <Reveal>
+            <p className="section-label mb-4">Hardware and Technology</p>
+            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.06] mb-6"
+              style={{ fontFamily: "var(--font-syne)" }}>
+              Professional telecom
+              <br />
+              <span className="text-[#1B65A6]">hardware we install.</span>
+            </h1>
+            <p className="text-[#4A6278] text-[17px] leading-relaxed max-w-xl"
+              style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+              We supply and professionally install the hardware that powers California businesses.
+              Every product is sourced from industry-leading manufacturers and backed by our
+              local installation and support team.
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.1} y={20}>
+            <div className="relative aspect-[16/10] rounded-3xl overflow-hidden border border-[#E2EDF6] shadow-[0_20px_60px_rgba(27,101,166,0.13)]">
+              <Image src="/atlantis/yealink-phone.png" alt="Yealink business phone" fill className="object-cover" />
+            </div>
+          </Reveal>
+        </div>
 
         {/* Category nav pills */}
         <Stagger className="flex flex-wrap gap-2.5">
