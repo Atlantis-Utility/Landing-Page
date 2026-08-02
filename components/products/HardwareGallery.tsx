@@ -2,12 +2,12 @@ import Image from "next/image";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const hardware = [
-  { name: "Yealink Business Phones", desc: "Desk phones for every extension.", src: "/atlantis/yealink-phone.png" },
-  { name: "Yealink Cordless Systems", desc: "Cordless handsets for mobility.", src: "/atlantis/yealink-cordless.png" },
-  { name: "UniFi Switches", desc: "Managed network switching.", src: "/atlantis/unifi-switch.png" },
-  { name: "UniFi Access Points", desc: "Business-grade Wi-Fi coverage.", src: "/atlantis/unifi-access-point.png" },
-  { name: "SonicWall Firewalls", desc: "Network security and threat protection.", src: "/atlantis/sonicwall-firewall.png" },
-  { name: "Inseego 5G Routers", desc: "Wireless failover and backup internet.", src: "/atlantis/inseego-5g-router.png" },
+  { name: "Business Desk Phones", desc: "Desk phones for every extension.", src: "/atlantis/business-desk-phone.jpg" },
+  { name: "Business Cordless Phones", desc: "Cordless handsets for mobility.", src: "/atlantis/business-cordless-phone.jpg" },
+  { name: "Managed Network Switches", desc: "Managed network switching.", src: "/atlantis/managed-network-switch.jpg" },
+  { name: "Business Wi-Fi Access Points", desc: "Business-grade Wi-Fi coverage.", src: "/atlantis/business-wifi-access-point.jpg" },
+  { name: "Business Firewalls", desc: "Network security and threat protection.", src: "/atlantis/business-firewall.jpg" },
+  { name: "5G Business Routers", desc: "Wireless failover and backup internet.", src: "/atlantis/5g-business-router.jpg" },
 ];
 
 export default function HardwareGallery() {

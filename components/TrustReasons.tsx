@@ -61,7 +61,7 @@ export default function TrustReasons() {
             </a>
 
             <div className="relative aspect-video rounded-2xl overflow-hidden border border-[#E2EDF6] hidden lg:block">
-              <Image src="/atlantis/managed-it-services.png" alt="Atlantis Utility support team" fill className="object-cover" />
+              <Image src="/atlantis/managed-it-services.jpg" alt="Atlantis Utility support team" fill className="object-cover" />
             </div>
           </Reveal>
 

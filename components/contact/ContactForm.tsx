@@ -191,7 +191,7 @@ export default function ContactForm() {
           <Stagger className="lg:col-span-2 space-y-4">
             <StaggerItem>
               <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-[#E2EDF6]">
-                <Image src="/atlantis/managed-it-services.png" alt="Atlantis Utility support team" fill className="object-cover" />
+                <Image src="/atlantis/managed-it-services.jpg" alt="Atlantis Utility support team" fill className="object-cover" />
               </div>
             </StaggerItem>
 

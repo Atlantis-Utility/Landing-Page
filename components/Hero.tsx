@@ -106,7 +106,7 @@ export default function Hero() {
               className="float relative w-full aspect-[16/10] rounded-3xl overflow-hidden border border-[#E2EDF6] shadow-[0_20px_60px_rgba(27,101,166,0.13)] z-10"
             >
               <Image
-                src="/atlantis/business-voip.png"
+                src="/atlantis/business-voip.jpg"
                 alt="Business VoIP phone system"
                 fill
                 priority

@@ -9,6 +9,7 @@ export type ServiceItem = {
   body: string[];
   features: string[];
   icon: React.ReactNode;
+  platforms?: { name: string; src: string }[];
 };
 
 export function IconPanel({ icon }: { icon: React.ReactNode }) {
@@ -28,7 +29,7 @@ export const services: ServiceItem[] = [
   {
     id: "business-voip",
     standalonePath: "/business-voip",
-    heroImage: "/atlantis/business-voip.png",
+    heroImage: "/atlantis/business-voip.jpg",
     tag: "Phone Systems", tagCls: "bg-blue-50 text-blue-600 border-blue-200",
     title: "Business VoIP",
     subtitle: "Feature-rich phone systems tailored to your business.",
@@ -42,7 +43,7 @@ export const services: ServiceItem[] = [
   {
     id: "hosted-voip-pbx",
     standalonePath: "/hosted-voip-pbx",
-    heroImage: "/atlantis/hosted-pbx.png",
+    heroImage: "/atlantis/hosted-pbx.jpg",
     tag: "Cloud PBX", tagCls: "bg-violet-50 text-violet-600 border-violet-200",
     title: "Hosted VoIP PBX",
     subtitle: "Cloud-based phone systems with enterprise-grade flexibility.",
@@ -56,7 +57,7 @@ export const services: ServiceItem[] = [
   {
     id: "sip-trunking",
     standalonePath: "/sip-trunking",
-    heroImage: "/atlantis/sip-trunking.png",
+    heroImage: "/atlantis/sip-trunking.jpg",
     tag: "SIP", tagCls: "bg-amber-50 text-amber-600 border-amber-200",
     title: "SIP Trunking",
     subtitle: "Keep your current PBX, cut your line costs.",
@@ -70,7 +71,7 @@ export const services: ServiceItem[] = [
   {
     id: "high-speed-internet",
     standalonePath: "/high-speed-internet",
-    heroImage: "/atlantis/high-speed-internet.png",
+    heroImage: "/atlantis/high-speed-internet.jpg",
     tag: "Internet", tagCls: "bg-emerald-50 text-emerald-700 border-emerald-200",
     title: "High-Speed Internet",
     subtitle: "Fiber, coax, and hybrid connections built for business.",
@@ -84,7 +85,7 @@ export const services: ServiceItem[] = [
   {
     id: "lte-backup-internet",
     standalonePath: "/lte-internet",
-    heroImage: "/atlantis/lte-5g-internet.png",
+    heroImage: "/atlantis/lte-5g-internet.jpg",
     tag: "Failover", tagCls: "bg-red-50 text-red-600 border-red-200",
     title: "LTE Backup Internet",
     subtitle: "Automatic failover so an outage never means downtime.",
@@ -97,7 +98,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "telecom-cost-reduction",
-    heroImage: "/atlantis/business-continuity.png",
+    heroImage: "/atlantis/business-continuity.jpg",
     tag: "Cost Savings", tagCls: "bg-blue-50 text-blue-600 border-blue-200",
     title: "Telecom Cost Reduction",
     subtitle: "Lower your monthly bills without cutting features.",
@@ -110,7 +111,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "structured-cabling",
-    heroImage: "/atlantis/networking-solutions.png",
+    heroImage: "/atlantis/networking-solutions.jpg",
     tag: "Infrastructure", tagCls: "bg-emerald-50 text-emerald-700 border-emerald-200",
     title: "Structured Cabling",
     subtitle: "Fiber and CAT6 cabling for every system you run.",
@@ -123,7 +124,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "managed-it",
-    heroImage: "/atlantis/managed-it-services.png",
+    heroImage: "/atlantis/managed-it-services.jpg",
     tag: "MSP", tagCls: "bg-violet-50 text-violet-600 border-violet-200",
     title: "Managed IT Services (MSP)",
     subtitle: "Proactive IT management so problems get fixed before you notice them.",
@@ -133,10 +134,14 @@ export const services: ServiceItem[] = [
     ],
     features: ["24/7 monitoring and patch management", "Backup and disaster recovery", "Vendor management on your behalf", "Flat-rate monthly pricing"],
     icon: (<svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="4" width="18" height="12" rx="2.5" stroke="currentColor" strokeWidth="1.5"/><path d="M8 19h6M11 16v3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/><path d="M6 10l3 3 6-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>),
+    platforms: [
+      { name: "Microsoft 365", src: "/atlantis/microsoft-365.jpg" },
+      { name: "Google Workspace", src: "/atlantis/google-workspace.jpg" },
+    ],
   },
   {
     id: "custom-software",
-    heroImage: "/atlantis/cloud-solutions.png",
+    heroImage: "/atlantis/cloud-solutions.jpg",
     tag: "Development", tagCls: "bg-amber-50 text-amber-600 border-amber-200",
     title: "Custom Software Development",
     subtitle: "Software built around how your business actually works.",
@@ -149,7 +154,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "help-desk",
-    heroImage: "/atlantis/managed-it-services.png",
+    heroImage: "/atlantis/managed-it-services.jpg",
     tag: "Support", tagCls: "bg-red-50 text-red-600 border-red-200",
     title: "Help Desk & Desk Support",
     subtitle: "Real people answering, fast, whether it's remote or on-site.",
@@ -162,7 +167,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "network-configuration",
-    heroImage: "/atlantis/networking-solutions.png",
+    heroImage: "/atlantis/networking-solutions.jpg",
     tag: "Networking", tagCls: "bg-blue-50 text-blue-600 border-blue-200",
     title: "Network Configuration & Design",
     subtitle: "Switches, routers, firewalls, and Wi-Fi, set up right the first time.",

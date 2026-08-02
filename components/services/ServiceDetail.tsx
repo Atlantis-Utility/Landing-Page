@@ -74,6 +74,19 @@ export default function ServiceDetail() {
                   ))}
                 </ul>
 
+                {s.platforms && (
+                  <div className="flex items-center gap-4 mb-8">
+                    <span className="text-[11.5px] font-semibold text-[#7290AA] uppercase tracking-wide" style={{ fontFamily: "var(--font-dm)" }}>
+                      Supports
+                    </span>
+                    {s.platforms.map((p) => (
+                      <div key={p.name} className="relative h-8 w-24">
+                        <Image src={p.src} alt={p.name} fill className="object-contain object-left" />
+                      </div>
+                    ))}
+                  </div>
+                )}
+
                 <div className="flex flex-wrap gap-3">
                   <MotionLink href="tel:8056582329"
                     className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px] shadow-sm"

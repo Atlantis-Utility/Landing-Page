@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Location } from "./data";
 import { Reveal } from "@/components/motion/Reveal";
 
@@ -22,23 +23,31 @@ export default function CityHero({ location }: { location: Location }) {
           <span className="text-[#3A5068] font-medium">{location.city}</span>
         </div>
 
-        <Reveal className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] text-[#1B65A6] text-[12px] font-semibold px-4 py-2 rounded-full shadow-sm mb-6"
-            style={{ fontFamily: "var(--font-dm)" }}>
-            <span className="w-1.5 h-1.5 rounded-full bg-green-500 pulse-dot" />
-            {location.home ? "Headquarters & Central Hub" : "Serving " + location.city + ", CA"}
-          </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.06] mb-6"
-            style={{ fontFamily: "var(--font-syne)" }}>
-            Telecom &amp; IT services in
-            <br />
-            <span className="text-[#1B65A6]">{location.city}, California.</span>
-          </h1>
-          <p className="text-[#4A6278] text-[17px] leading-relaxed max-w-xl"
-            style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
-            {location.paragraph}
-          </p>
-        </Reveal>
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <Reveal>
+            <div className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] text-[#1B65A6] text-[12px] font-semibold px-4 py-2 rounded-full shadow-sm mb-6"
+              style={{ fontFamily: "var(--font-dm)" }}>
+              <span className="w-1.5 h-1.5 rounded-full bg-green-500 pulse-dot" />
+              {location.home ? "Headquarters & Central Hub" : "Serving " + location.city + ", CA"}
+            </div>
+            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.06] mb-6"
+              style={{ fontFamily: "var(--font-syne)" }}>
+              Telecom &amp; IT services in
+              <br />
+              <span className="text-[#1B65A6]">{location.city}, California.</span>
+            </h1>
+            <p className="text-[#4A6278] text-[17px] leading-relaxed max-w-xl"
+              style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+              {location.paragraph}
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.1} y={20}>
+            <div className="relative aspect-[16/10] rounded-3xl overflow-hidden border border-[#E2EDF6] shadow-[0_20px_60px_rgba(27,101,166,0.13)]">
+              <Image src={`/atlantis/${location.slug}.jpg`} alt={`${location.city}, California`} fill className="object-cover" />
+            </div>
+          </Reveal>
+        </div>
       </div>
     </section>
   );

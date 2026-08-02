@@ -48,7 +48,7 @@ export default function AboutHero() {
 
           <Reveal delay={0.1} y={20}>
             <div className="relative aspect-[16/10] rounded-3xl overflow-hidden border border-[#E2EDF6] shadow-[0_20px_60px_rgba(27,101,166,0.13)]">
-              <Image src="/atlantis/managed-it-services.png" alt="Atlantis Utility technician supporting a client" fill className="object-cover" />
+              <Image src="/atlantis/managed-it-services.jpg" alt="Atlantis Utility technician supporting a client" fill className="object-cover" />
             </div>
           </Reveal>
         </div>
