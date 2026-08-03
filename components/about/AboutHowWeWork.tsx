@@ -100,8 +100,8 @@ export default function AboutHowWeWork() {
             {audiences.map((a, i) => (
               <StaggerItem key={i}>
                 <div
-                  className="group flex items-start gap-4 bg-[#F5F8FC] hover:bg-[#EEF4FB] border border-transparent hover:border-[#C0D2E5] rounded-2xl p-5 transition-all duration-200">
-                  <div className="w-10 h-10 rounded-xl bg-white border border-[#E2EDF6] flex items-center justify-center text-[#1B65A6] flex-shrink-0 shadow-sm group-hover:bg-[#1B65A6] group-hover:text-white group-hover:border-[#1B65A6] transition-all duration-200">
+                  className="flex items-start gap-4 bg-[#F5F8FC] border border-transparent rounded-2xl p-5">
+                  <div className="w-10 h-10 rounded-xl bg-white border border-[#E2EDF6] flex items-center justify-center text-[#1B65A6] flex-shrink-0 shadow-sm">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                       <circle cx="9" cy="6" r="3" stroke="currentColor" strokeWidth="1.4"/>
                       <path d="M3 15c0-3 2.7-5 6-5s6 2 6 5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>

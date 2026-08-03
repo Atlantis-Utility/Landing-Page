@@ -107,9 +107,9 @@ export default function Services() {
           {services.map((s, i) => (
             <StaggerItem key={i}>
               <a href={s.href}
-                className="card group flex flex-col gap-0 no-underline bg-white cursor-pointer h-full overflow-hidden">
+                className="card flex flex-col gap-0 no-underline bg-white cursor-pointer h-full overflow-hidden">
                 <div className="relative aspect-[16/10] w-full">
-                  <Image src={s.image} alt={s.title} fill className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <Image src={s.image} alt={s.title} fill className="object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 w-9 h-9 rounded-xl bg-white/95 backdrop-blur-sm flex items-center justify-center text-[#1B65A6] shadow-sm">
                     {s.icon}
@@ -117,7 +117,7 @@ export default function Services() {
                 </div>
                 <div className="p-6 flex flex-col gap-5 flex-1">
                   <div className="flex-1">
-                    <h3 className="text-[16px] font-bold text-[#0E1A28] mb-2 group-hover:text-[#1B65A6] transition-colors"
+                    <h3 className="text-[16px] font-bold text-[#0E1A28] mb-2"
                       style={{ fontFamily: "var(--font-syne)" }}>
                       {s.title}
                     </h3>
@@ -126,7 +126,7 @@ export default function Services() {
                       {s.desc}
                     </p>
                   </div>
-                  <div className="flex items-center gap-1.5 text-[#1B65A6] text-[13px] font-semibold opacity-0 group-hover:opacity-100 transition-opacity -mb-1"
+                  <div className="flex items-center gap-1.5 text-[#1B65A6] text-[13px] font-semibold -mb-1"
                     style={{ fontFamily: "var(--font-dm)" }}>
                     Learn more
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none">

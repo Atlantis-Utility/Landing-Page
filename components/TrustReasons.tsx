@@ -65,8 +65,8 @@ export default function TrustReasons() {
             {reasons.map((r, i) => (
               <StaggerItem key={i}>
                 <div
-                  className="group flex items-start gap-4 bg-[#F5F8FC] hover:bg-[#EEF4FB] border border-transparent hover:border-[#C0D2E5] rounded-2xl p-5 transition-all duration-200 cursor-default">
-                  <div className="w-10 h-10 rounded-xl bg-white border border-[#E2EDF6] flex items-center justify-center text-[#1B65A6] flex-shrink-0 shadow-sm group-hover:bg-[#1B65A6] group-hover:text-white group-hover:border-[#1B65A6] transition-all duration-200">
+                  className="flex items-start gap-4 bg-[#F5F8FC] border border-transparent rounded-2xl p-5 cursor-default">
+                  <div className="w-10 h-10 rounded-xl bg-white border border-[#E2EDF6] flex items-center justify-center text-[#1B65A6] flex-shrink-0 shadow-sm">
                     {r.icon}
                   </div>
                   <div>

@@ -148,10 +148,10 @@ export default function ServiceLandingPage({ id }: { id: string }) {
             {related.map((r) => (
               <StaggerItem key={r.id}>
                 <a href={r.standalonePath ?? `/services#${r.id}`}
-                  className="card group p-6 flex flex-col gap-4 no-underline bg-white cursor-pointer h-full">
+                  className="card p-6 flex flex-col gap-4 no-underline bg-white cursor-pointer h-full">
                   <div className="service-icon">{r.icon}</div>
                   <div>
-                    <h3 className="text-[16px] font-bold text-[#0E1A28] mb-2 group-hover:text-[#1B65A6] transition-colors" style={{ fontFamily: "var(--font-syne)" }}>
+                    <h3 className="text-[16px] font-bold text-[#0E1A28] mb-2" style={{ fontFamily: "var(--font-syne)" }}>
                       {r.title}
                     </h3>
                     <p className="text-[14.5px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
