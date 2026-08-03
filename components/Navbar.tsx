@@ -79,10 +79,10 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 inset-x-0 z-50 bg-white transition-all duration-300 ${
           scrolled
-            ? "bg-white shadow-[0_1px_24px_rgba(14,26,40,0.08)] border-b border-[#E2EDF6]"
-            : "bg-white/70 backdrop-blur-md"
+            ? "shadow-[0_1px_24px_rgba(14,26,40,0.08)] border-b border-[#E2EDF6]"
+            : "border-b border-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4">
