@@ -6,6 +6,7 @@ export type Location = {
   short: string;
   paragraph: string;
   home?: boolean;
+  photo?: string;
   services: LocationService[];
 };
 
@@ -100,6 +101,20 @@ export const locations: Location[] = [
     short: "New market. Request service availability in Santa Barbara.",
     paragraph:
       "Santa Barbara is one of our newest markets as we expand service across California. Availability varies by building and neighborhood, so we recommend reaching out directly to confirm coverage — our team can walk you through what's available today and what's coming online soon.",
+    services: [
+      { label: "Business VoIP", href: "/services#business-voip" },
+      { label: "High-Speed Internet", href: "/services#high-speed-internet" },
+      { label: "Managed IT Services (MSP)", href: "/services#managed-it" },
+      { label: "Telecom Cost Reduction", href: "/services#telecom-cost-reduction" },
+    ],
+  },
+  {
+    slug: "goleta",
+    city: "Goleta",
+    short: "New market. Request service availability in Goleta.",
+    photo: "/atlantis/goleta.png",
+    paragraph:
+      "Goleta's mix of tech companies, university-adjacent businesses, and coastal offices is one of our newest markets as we expand service across California. Availability varies by building and neighborhood, so we recommend reaching out directly to confirm coverage — our team can walk you through what's available today and what's coming online soon.",
     services: [
       { label: "Business VoIP", href: "/services#business-voip" },
       { label: "High-Speed Internet", href: "/services#high-speed-internet" },

@@ -25,6 +25,7 @@ const locationsLinks = [
   { label: "Thousand Oaks, CA", href: "/locations/thousand-oaks" },
   { label: "Paso Robles, CA",   href: "/locations/paso-robles" },
   { label: "Santa Barbara, CA", href: "/locations/santa-barbara" },
+  { label: "Goleta, CA",        href: "/locations/goleta" },
 ];
 
 const navLinks: {

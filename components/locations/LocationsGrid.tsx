@@ -14,7 +14,7 @@ export default function LocationsGrid() {
                 className={`card overflow-hidden flex flex-col h-full ${loc.home ? "bg-[#1B65A6] border-[#134d80] shadow-lg shadow-blue-200/50" : "bg-white"}`}
               >
                 <div className="relative aspect-[16/9] w-full">
-                  <Image src={`/atlantis/${loc.slug}.jpg`} alt={`${loc.city}, California`} fill className="object-cover" />
+                  <Image src={loc.photo ?? `/atlantis/${loc.slug}.jpg`} alt={`${loc.city}, California`} fill className="object-cover" />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                 <div className="flex items-center justify-between mb-3">

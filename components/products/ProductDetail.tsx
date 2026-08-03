@@ -405,6 +405,7 @@ function IPCameraIllustration() {
 const products = [
   {
     id:       "voip-pa",
+    photo:    "/atlantis/voip-pa-system.png",
     tag:      "Audio Systems",
     tagCls:   "bg-violet-50 text-violet-600 border-violet-200",
     title:    "VoIP PA Systems",

@@ -1,12 +1,13 @@
+import Image from "next/image";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const products = [
-  { title: "VoIP PA Systems",          desc: "Clear paging and emergency broadcasts with VoIP-powered PA solutions.", tag: "Audio",          tagCls: "bg-violet-50 text-violet-600 border-violet-200" },
-  { title: "NEC & Yealink Phones",     desc: "Feature-rich VoIP desk phones built for speed, voice quality, and scale.", tag: "Hardware",      tagCls: "bg-blue-50 text-blue-600 border-blue-200" },
-  { title: "Analog to SIP Conversions",desc: "Modernize analog infrastructure to leverage SIP-based telecom.", tag: "Migration",         tagCls: "bg-amber-50 text-amber-600 border-amber-200" },
-  { title: "Digital to VoIP Conversions",desc:"Transition legacy digital phone systems to advanced VoIP technology.", tag: "Migration",      tagCls: "bg-amber-50 text-amber-600 border-amber-200" },
-  { title: "IP Camera Systems",        desc: "Professional-grade surveillance for business security and compliance.", tag: "Security",       tagCls: "bg-red-50 text-red-600 border-red-200" },
-  { title: "Structured Cabling",       desc: "Foundational cabling for all data, internet, and telecom systems.", tag: "Infrastructure",  tagCls: "bg-emerald-50 text-emerald-700 border-emerald-200" },
+  { title: "VoIP PA Systems",          desc: "Clear paging and emergency broadcasts with VoIP-powered PA solutions.", tag: "Audio",          tagCls: "bg-violet-50 text-violet-600 border-violet-200", image: "/atlantis/voip-pa-system.png" },
+  { title: "NEC & Yealink Phones",     desc: "Feature-rich VoIP desk phones built for speed, voice quality, and scale.", tag: "Hardware",      tagCls: "bg-blue-50 text-blue-600 border-blue-200", image: "/atlantis/business-cordless-phone.jpg" },
+  { title: "Analog to SIP Conversions",desc: "Modernize analog infrastructure to leverage SIP-based telecom.", tag: "Migration",         tagCls: "bg-amber-50 text-amber-600 border-amber-200", image: "/atlantis/managed-network-switch.jpg" },
+  { title: "Digital to VoIP Conversions",desc:"Transition legacy digital phone systems to advanced VoIP technology.", tag: "Migration",      tagCls: "bg-amber-50 text-amber-600 border-amber-200", image: "/atlantis/cloud-solutions.jpg" },
+  { title: "IP Camera Systems",        desc: "Professional-grade surveillance for business security and compliance.", tag: "Security",       tagCls: "bg-red-50 text-red-600 border-red-200", image: "/atlantis/security-cameras.jpg" },
+  { title: "Structured Cabling",       desc: "Foundational cabling for all data, internet, and telecom systems.", tag: "Infrastructure",  tagCls: "bg-emerald-50 text-emerald-700 border-emerald-200", image: "/atlantis/networking-solutions.jpg" },
 ];
 
 export default function Products() {
@@ -32,15 +33,8 @@ export default function Products() {
 
           {/* Visual */}
           <div className="hidden lg:block">
-            <div className="bg-[#F5F8FC] rounded-3xl p-6 border border-[#E2EDF6]">
-              <div className="grid grid-cols-2 gap-3">
-                {["VoIP Phones", "PA Systems", "IP Cameras", "SIP Gateways", "CAT6 Cabling", "Analog Adapters"].map((item, i) => (
-                  <div key={item} className="bg-white rounded-xl px-4 py-3 flex items-center gap-2.5 border border-[#E2EDF6] shadow-sm">
-                    <div className="w-2 h-2 rounded-full bg-[#1B65A6] flex-shrink-0" style={{ opacity: 0.35 + i * 0.12 }} />
-                    <span className="text-[12.5px] font-medium text-[#3A5068]" style={{ fontFamily: "var(--font-dm)" }}>{item}</span>
-                  </div>
-                ))}
-              </div>
+            <div className="relative aspect-[16/10] rounded-3xl overflow-hidden border border-[#E2EDF6] shadow-[0_20px_60px_rgba(27,101,166,0.13)]">
+              <Image src="/atlantis/business-firewall.jpg" alt="Business networking hardware" fill className="object-cover" />
             </div>
           </div>
         </Reveal>
@@ -49,21 +43,24 @@ export default function Products() {
         <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {products.map((p, i) => (
             <StaggerItem key={i}>
-              <div className="card p-6 cursor-default bg-white h-full">
-                <div className="flex items-start justify-between gap-3 mb-3">
-                  <h3 className="text-[15px] font-bold text-[#0E1A28] leading-snug"
-                    style={{ fontFamily: "var(--font-syne)" }}>
-                    {p.title}
-                  </h3>
-                  <span className={`text-[10px] font-semibold px-2.5 py-1 rounded-full border flex-shrink-0 ${p.tagCls}`}
+              <div className="card cursor-default bg-white h-full overflow-hidden flex flex-col">
+                <div className="relative aspect-[16/10] w-full">
+                  <Image src={p.image} alt={p.title} fill className="object-cover" />
+                  <span className={`absolute top-3 right-3 text-[10px] font-semibold px-2.5 py-1 rounded-full border shadow-sm ${p.tagCls}`}
                     style={{ fontFamily: "var(--font-dm)" }}>
                     {p.tag}
                   </span>
                 </div>
-                <p className="text-[13px] text-[#7290AA] leading-relaxed"
-                  style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
-                  {p.desc}
-                </p>
+                <div className="p-6 flex-1">
+                  <h3 className="text-[15px] font-bold text-[#0E1A28] leading-snug mb-2"
+                    style={{ fontFamily: "var(--font-syne)" }}>
+                    {p.title}
+                  </h3>
+                  <p className="text-[13px] text-[#7290AA] leading-relaxed"
+                    style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                    {p.desc}
+                  </p>
+                </div>
               </div>
             </StaggerItem>
           ))}
