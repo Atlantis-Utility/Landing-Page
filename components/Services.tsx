@@ -48,7 +48,7 @@ const services = [
     title: "Structured Cabling",
     desc: "Fiber and CAT6 cabling for data, VoIP, and security infrastructure.",
     href: "/services#structured-cabling",
-    image: "/atlantis/networking-solutions.jpg",
+    image: "/atlantis/structured-cabling.png",
     icon: (<svg width="18" height="18" viewBox="0 0 22 22" fill="none"><rect x="3" y="3" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5"/><rect x="13" y="3" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5"/><rect x="8" y="13" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5"/><path d="M6 9v4h5M16 9v4h-5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/></svg>),
   },
   {

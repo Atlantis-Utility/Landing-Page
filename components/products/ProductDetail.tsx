@@ -420,7 +420,7 @@ const products = [
   },
   {
     id:       "nec-phones",
-    photo:    "/atlantis/business-cordless-phone.jpg",
+    photo:    "/atlantis/yealink-phones.png",
     tag:      "Phone Hardware",
     tagCls:   "bg-blue-50 text-blue-600 border-blue-200",
     title:    "NEC and Yealink Phone Systems",
@@ -435,6 +435,7 @@ const products = [
   },
   {
     id:       "analog-sip",
+    photo:    "/atlantis/analog-to-sip.png",
     tag:      "System Migration",
     tagCls:   "bg-amber-50 text-amber-600 border-amber-200",
     title:    "Analog to SIP PA Systems",
@@ -449,7 +450,7 @@ const products = [
   },
   {
     id:       "digital-voip",
-    photo:    "/atlantis/cloud-solutions.jpg",
+    photo:    "/atlantis/digital-to-sip.png",
     tag:      "VoIP Conversion",
     tagCls:   "bg-emerald-50 text-emerald-700 border-emerald-200",
     title:    "Digital to VoIP Conversions",

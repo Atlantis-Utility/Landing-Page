@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const reasons = [
@@ -59,10 +58,6 @@ export default function TrustReasons() {
                 <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </a>
-
-            <div className="relative aspect-video rounded-2xl overflow-hidden border border-[#E2EDF6] hidden lg:block">
-              <Image src="/atlantis/managed-it-services.jpg" alt="Atlantis Utility support team" fill className="object-cover" />
-            </div>
           </Reveal>
 
           {/* Right: reason cards */}

@@ -111,7 +111,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "structured-cabling",
-    heroImage: "/atlantis/networking-solutions.jpg",
+    heroImage: "/atlantis/structured-cabling.png",
     tag: "Infrastructure", tagCls: "bg-emerald-50 text-emerald-700 border-emerald-200",
     title: "Structured Cabling",
     subtitle: "Fiber and CAT6 cabling for every system you run.",

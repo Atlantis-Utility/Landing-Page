@@ -3,11 +3,11 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const products = [
   { title: "VoIP PA Systems",          desc: "Clear paging and emergency broadcasts with VoIP-powered PA solutions.", tag: "Audio",          tagCls: "bg-violet-50 text-violet-600 border-violet-200", image: "/atlantis/voip-pa-system.png" },
-  { title: "NEC & Yealink Phones",     desc: "Feature-rich VoIP desk phones built for speed, voice quality, and scale.", tag: "Hardware",      tagCls: "bg-blue-50 text-blue-600 border-blue-200", image: "/atlantis/business-cordless-phone.jpg" },
-  { title: "Analog to SIP Conversions",desc: "Modernize analog infrastructure to leverage SIP-based telecom.", tag: "Migration",         tagCls: "bg-amber-50 text-amber-600 border-amber-200", image: "/atlantis/managed-network-switch.jpg" },
-  { title: "Digital to VoIP Conversions",desc:"Transition legacy digital phone systems to advanced VoIP technology.", tag: "Migration",      tagCls: "bg-amber-50 text-amber-600 border-amber-200", image: "/atlantis/cloud-solutions.jpg" },
+  { title: "NEC & Yealink Phones",     desc: "Feature-rich VoIP desk phones built for speed, voice quality, and scale.", tag: "Hardware",      tagCls: "bg-blue-50 text-blue-600 border-blue-200", image: "/atlantis/yealink-phones.png" },
+  { title: "Analog to SIP Conversions",desc: "Modernize analog infrastructure to leverage SIP-based telecom.", tag: "Migration",         tagCls: "bg-amber-50 text-amber-600 border-amber-200", image: "/atlantis/analog-to-sip.png" },
+  { title: "Digital to VoIP Conversions",desc:"Transition legacy digital phone systems to advanced VoIP technology.", tag: "Migration",      tagCls: "bg-amber-50 text-amber-600 border-amber-200", image: "/atlantis/digital-to-sip.png" },
   { title: "IP Camera Systems",        desc: "Professional-grade surveillance for business security and compliance.", tag: "Security",       tagCls: "bg-red-50 text-red-600 border-red-200", image: "/atlantis/security-cameras.jpg" },
-  { title: "Structured Cabling",       desc: "Foundational cabling for all data, internet, and telecom systems.", tag: "Infrastructure",  tagCls: "bg-emerald-50 text-emerald-700 border-emerald-200", image: "/atlantis/networking-solutions.jpg" },
+  { title: "Structured Cabling",       desc: "Foundational cabling for all data, internet, and telecom systems.", tag: "Infrastructure",  tagCls: "bg-emerald-50 text-emerald-700 border-emerald-200", image: "/atlantis/structured-cabling.png" },
 ];
 
 export default function Products() {
@@ -15,28 +15,19 @@ export default function Products() {
     <section id="products" className="py-20 sm:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-2.5 sm:px-4 lg:px-5 xl:px-8">
 
-        {/* Header split */}
-        <Reveal className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center mb-14">
-          <div>
-            <p className="section-label mb-3">Hardware and Technology</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-4"
-              style={{ fontFamily: "var(--font-syne)" }}>
-              Hardware and Technology
-              <br />Products We Install
-            </h2>
-            <p className="text-[#4A6278] text-[15px] leading-relaxed"
-              style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
-              We supply and professionally install the hardware that powers California businesses,
-              from VoIP phones to security systems. Performance, reliability, peace of mind.
-            </p>
-          </div>
-
-          {/* Visual */}
-          <div className="hidden lg:block">
-            <div className="relative aspect-[16/10] rounded-3xl overflow-hidden border border-[#E2EDF6] shadow-[0_20px_60px_rgba(27,101,166,0.13)]">
-              <Image src="/atlantis/business-firewall.jpg" alt="Business networking hardware" fill className="object-cover" />
-            </div>
-          </div>
+        {/* Header */}
+        <Reveal className="max-w-2xl mb-14">
+          <p className="section-label mb-3">Hardware and Technology</p>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-4"
+            style={{ fontFamily: "var(--font-syne)" }}>
+            Hardware and Technology
+            <br />Products We Install
+          </h2>
+          <p className="text-[#4A6278] text-[15px] leading-relaxed"
+            style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+            We supply and professionally install the hardware that powers California businesses,
+            from VoIP phones to security systems. Performance, reliability, peace of mind.
+          </p>
         </Reveal>
 
         {/* Product grid */}
