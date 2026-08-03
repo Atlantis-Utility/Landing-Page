@@ -24,7 +24,7 @@ export default function NetworkSection() {
           {/* Left content */}
           <div>
             <div
-              className="inline-flex items-center gap-2 text-accent text-[11px] font-medium uppercase tracking-widest mb-5"
+              className="inline-flex items-center gap-2 text-accent text-[12px] font-medium uppercase tracking-widest mb-5"
               style={{ fontFamily: "var(--font-dm-sans)" }}
             >
               <div className="w-6 h-[1px] bg-accent" />
@@ -32,7 +32,7 @@ export default function NetworkSection() {
             </div>
 
             <h2
-              className="text-4xl md:text-5xl font-bold text-white leading-tight tracking-tight mb-6"
+              className="text-5xl md:text-6xl font-bold text-white leading-tight tracking-tight mb-6"
               style={{ fontFamily: "var(--font-syne)" }}
             >
               Your network.
@@ -41,7 +41,7 @@ export default function NetworkSection() {
             </h2>
 
             <p
-              className="text-neutral-400 text-[16px] leading-relaxed mb-10"
+              className="text-neutral-400 text-[17.5px] leading-relaxed mb-10"
               style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 300 }}
             >
               One unified view across all service layers. From fiber backbone to last-mile
@@ -61,14 +61,14 @@ export default function NetworkSection() {
                         }}
                       />
                       <span
-                        className="text-[13px] text-neutral-300"
+                        className="text-[14.5px] text-neutral-300"
                         style={{ fontFamily: "var(--font-dm-sans)" }}
                       >
                         {s.name}
                       </span>
                     </div>
                     <span
-                      className="text-[13px] font-semibold"
+                      className="text-[14.5px] font-semibold"
                       style={{
                         fontFamily: "var(--font-syne)",
                         color: s.status === "operational" ? "#0D9B5A" : "#D97706",
@@ -110,13 +110,13 @@ export default function NetworkSection() {
                     </div>
                     <div>
                       <div
-                        className="text-[13px] font-medium text-white"
+                        className="text-[14.5px] font-medium text-white"
                         style={{ fontFamily: "var(--font-syne)" }}
                       >
                         {r.name}
                       </div>
                       <div
-                        className="text-[11px] text-neutral-500"
+                        className="text-[12px] text-neutral-500"
                         style={{ fontFamily: "var(--font-dm-sans)" }}
                       >
                         {r.nodes} active nodes
@@ -126,7 +126,7 @@ export default function NetworkSection() {
                   <div className="flex items-center gap-3">
                     <div className="text-right">
                       <div
-                        className="text-[16px] font-bold"
+                        className="text-[17.5px] font-bold"
                         style={{
                           fontFamily: "var(--font-syne)",
                           color: r.health >= 99 ? "#0D9B5A" : r.health >= 97 ? "#0A5FFF" : "#D97706",
@@ -134,7 +134,7 @@ export default function NetworkSection() {
                       >
                         {r.health}%
                       </div>
-                      <div className="text-[10px] text-neutral-600" style={{ fontFamily: "var(--font-dm-sans)" }}>
+                      <div className="text-[11px] text-neutral-600" style={{ fontFamily: "var(--font-dm-sans)" }}>
                         health
                       </div>
                     </div>
@@ -156,13 +156,13 @@ export default function NetworkSection() {
               </div>
               <div>
                 <div
-                  className="text-[14px] font-semibold text-white"
+                  className="text-[15.5px] font-semibold text-white"
                   style={{ fontFamily: "var(--font-syne)" }}
                 >
                   All 5 regions reporting normal
                 </div>
                 <div
-                  className="text-[12px] text-neutral-500"
+                  className="text-[13px] text-neutral-500"
                   style={{ fontFamily: "var(--font-dm-sans)" }}
                 >
                   Last full sweep: 2 seconds ago

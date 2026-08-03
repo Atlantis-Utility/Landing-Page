@@ -103,7 +103,7 @@ export default function Navbar() {
                     onMouseLeave={() => setOpenDropdown((cur) => (cur === l.label ? null : cur))}
                   >
                     <a href={l.href}
-                      className="relative flex items-center gap-1 px-2 py-2 text-[12.5px] font-medium text-[#3A5068] hover:text-[#1B65A6] rounded-lg transition-colors duration-150 whitespace-nowrap"
+                      className="relative flex items-center gap-1 px-2 py-2 text-[14px] font-medium text-[#3A5068] hover:text-[#1B65A6] rounded-lg transition-colors duration-150 whitespace-nowrap"
                       style={{ fontFamily: "var(--font-dm)" }}>
                       {hovered === l.label && (
                         <motion.span layoutId="navHoverPill" transition={PILL_TRANSITION}
@@ -125,14 +125,14 @@ export default function Navbar() {
                           <div className="w-72 bg-white rounded-2xl border border-[#E2EDF6] shadow-[0_20px_50px_rgba(14,26,40,0.14)] p-2">
                             {l.dropdown.map((d) => (
                               <a key={d.label} href={d.href}
-                                className="block px-3.5 py-2.5 text-[13px] font-medium text-[#3A5068] hover:text-[#1B65A6] hover:bg-[#EEF4FB] rounded-xl transition-all duration-150"
+                                className="block px-3.5 py-2.5 text-[14.5px] font-medium text-[#3A5068] hover:text-[#1B65A6] hover:bg-[#EEF4FB] rounded-xl transition-all duration-150"
                                 style={{ fontFamily: "var(--font-dm)" }}>
                                 {d.label}
                               </a>
                             ))}
                             <div className="mt-1 pt-2 border-t border-[#E2EDF6]">
                               <a href={l.viewAllHref}
-                                className="block px-3.5 py-2.5 text-[13px] font-semibold text-[#1B65A6] hover:bg-[#EEF4FB] rounded-xl transition-all duration-150"
+                                className="block px-3.5 py-2.5 text-[14.5px] font-semibold text-[#1B65A6] hover:bg-[#EEF4FB] rounded-xl transition-all duration-150"
                                 style={{ fontFamily: "var(--font-dm)" }}>
                                 {l.viewAllLabel} →
                               </a>
@@ -145,7 +145,7 @@ export default function Navbar() {
                 ) : (
                   <a key={l.label} href={l.href}
                     onMouseEnter={() => { setHovered(l.label); setOpenDropdown(null); }}
-                    className="relative flex-shrink-0 px-2 py-2 text-[12.5px] font-medium text-[#3A5068] hover:text-[#1B65A6] rounded-lg transition-colors duration-150 whitespace-nowrap"
+                    className="relative flex-shrink-0 px-2 py-2 text-[14px] font-medium text-[#3A5068] hover:text-[#1B65A6] rounded-lg transition-colors duration-150 whitespace-nowrap"
                     style={{ fontFamily: "var(--font-dm)" }}>
                     {hovered === l.label && (
                       <motion.span layoutId="navHoverPill" transition={PILL_TRANSITION}
@@ -157,7 +157,7 @@ export default function Navbar() {
               ))}
               <a href={LOGIN_URL} target="_blank" rel="noopener noreferrer"
                 onMouseEnter={() => { setHovered("Login"); setOpenDropdown(null); }}
-                className="relative flex-shrink-0 px-2 py-2 text-[12.5px] font-medium text-[#3A5068] hover:text-[#1B65A6] rounded-lg transition-colors duration-150 whitespace-nowrap"
+                className="relative flex-shrink-0 px-2 py-2 text-[14px] font-medium text-[#3A5068] hover:text-[#1B65A6] rounded-lg transition-colors duration-150 whitespace-nowrap"
                 style={{ fontFamily: "var(--font-dm)" }}>
                 {hovered === "Login" && (
                   <motion.span layoutId="navHoverPill" transition={PILL_TRANSITION}
@@ -170,7 +170,7 @@ export default function Navbar() {
             {/* Desktop CTAs */}
             <div className="hidden xl:flex items-center gap-2.5 flex-shrink-0">
               <a href="tel:8056582329"
-                className="flex items-center gap-1.5 text-[12.5px] font-medium text-[#3A5068] hover:text-[#1B65A6] transition-colors whitespace-nowrap"
+                className="flex items-center gap-1.5 text-[14px] font-medium text-[#3A5068] hover:text-[#1B65A6] transition-colors whitespace-nowrap"
                 style={{ fontFamily: "var(--font-dm)" }}>
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" className="flex-shrink-0">
                   <path fillRule="evenodd" clipRule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.279-.09.408a12.035 12.035 0 0 0 5.61 5.61c.129.074.307.045.408-.09l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.819V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"/>
@@ -181,7 +181,7 @@ export default function Navbar() {
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.96 }}
                 transition={{ duration: 0.15 }}
-                className="bg-[#1B65A6] hover:bg-[#134d80] text-white text-[12.5px] font-semibold px-4 py-2.5 rounded-xl shadow-sm whitespace-nowrap"
+                className="bg-[#1B65A6] hover:bg-[#134d80] text-white text-[14px] font-semibold px-4 py-2.5 rounded-xl shadow-sm whitespace-nowrap"
                 style={{ fontFamily: "var(--font-dm)" }}>
                 Free Consultation
               </motion.a>
@@ -228,7 +228,7 @@ export default function Navbar() {
               className="absolute top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white flex flex-col shadow-2xl"
             >
               <div className="flex items-center justify-between px-5 h-16 border-b border-[#E2EDF6] flex-shrink-0">
-                <span className="text-[13px] font-bold text-[#0E1A28]" style={{ fontFamily: "var(--font-syne)" }}>Navigation</span>
+                <span className="text-[14.5px] font-bold text-[#0E1A28]" style={{ fontFamily: "var(--font-syne)" }}>Navigation</span>
                 <button onClick={() => setOpen(false)} className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#F5F8FC] text-[#7290AA]">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
@@ -241,7 +241,7 @@ export default function Navbar() {
                     <div key={l.label} className="rounded-xl overflow-hidden">
                       <button
                         onClick={() => setMobileSection(mobileSection === l.label ? null : l.label)}
-                        className="w-full flex items-center justify-between px-4 py-3.5 text-[14px] font-medium text-[#0E1A28] hover:bg-[#EEF4FB] hover:text-[#1B65A6] rounded-xl transition-all"
+                        className="w-full flex items-center justify-between px-4 py-3.5 text-[15.5px] font-medium text-[#0E1A28] hover:bg-[#EEF4FB] hover:text-[#1B65A6] rounded-xl transition-all"
                         style={{ fontFamily: "var(--font-dm)" }}>
                         {l.label}
                         <ChevronDown open={mobileSection === l.label} />
@@ -258,13 +258,13 @@ export default function Navbar() {
                             <div className="pl-4 pb-1 space-y-0.5">
                               {l.dropdown.map((d) => (
                                 <a key={d.label} href={d.href} onClick={() => setOpen(false)}
-                                  className="block px-4 py-2.5 text-[13px] text-[#4A6278] hover:text-[#1B65A6] hover:bg-[#EEF4FB] rounded-lg transition-all"
+                                  className="block px-4 py-2.5 text-[14.5px] text-[#4A6278] hover:text-[#1B65A6] hover:bg-[#EEF4FB] rounded-lg transition-all"
                                   style={{ fontFamily: "var(--font-dm)" }}>
                                   {d.label}
                                 </a>
                               ))}
                               <a href={l.viewAllHref} onClick={() => setOpen(false)}
-                                className="block px-4 py-2.5 text-[13px] font-semibold text-[#1B65A6] hover:bg-[#EEF4FB] rounded-lg transition-all"
+                                className="block px-4 py-2.5 text-[14.5px] font-semibold text-[#1B65A6] hover:bg-[#EEF4FB] rounded-lg transition-all"
                                 style={{ fontFamily: "var(--font-dm)" }}>
                                 {l.viewAllLabel} →
                               </a>
@@ -275,7 +275,7 @@ export default function Navbar() {
                     </div>
                   ) : (
                     <a key={l.label} href={l.href} onClick={() => setOpen(false)}
-                      className="flex items-center justify-between px-4 py-3.5 text-[14px] font-medium text-[#0E1A28] hover:bg-[#EEF4FB] hover:text-[#1B65A6] rounded-xl transition-all"
+                      className="flex items-center justify-between px-4 py-3.5 text-[15.5px] font-medium text-[#0E1A28] hover:bg-[#EEF4FB] hover:text-[#1B65A6] rounded-xl transition-all"
                       style={{ fontFamily: "var(--font-dm)" }}>
                       {l.label}
                       <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -285,7 +285,7 @@ export default function Navbar() {
                   )
                 ))}
                 <a href={LOGIN_URL} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}
-                  className="flex items-center justify-between px-4 py-3.5 text-[14px] font-medium text-[#0E1A28] hover:bg-[#EEF4FB] hover:text-[#1B65A6] rounded-xl transition-all"
+                  className="flex items-center justify-between px-4 py-3.5 text-[15.5px] font-medium text-[#0E1A28] hover:bg-[#EEF4FB] hover:text-[#1B65A6] rounded-xl transition-all"
                   style={{ fontFamily: "var(--font-dm)" }}>
                   Login
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -295,12 +295,12 @@ export default function Navbar() {
               </div>
               <div className="p-4 border-t border-[#E2EDF6] space-y-2.5 flex-shrink-0">
                 <a href="tel:8056582329"
-                  className="flex items-center justify-center gap-2 w-full border border-[#C0D2E5] text-[#1B65A6] font-semibold py-3 rounded-xl text-[14px] hover:bg-[#EEF4FB] transition-colors"
+                  className="flex items-center justify-center gap-2 w-full border border-[#C0D2E5] text-[#1B65A6] font-semibold py-3 rounded-xl text-[15.5px] hover:bg-[#EEF4FB] transition-colors"
                   style={{ fontFamily: "var(--font-dm)" }}>
                   (805) 658-2329
                 </a>
                 <a href="/contact" onClick={() => setOpen(false)}
-                  className="flex items-center justify-center w-full bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold py-3.5 rounded-xl text-[14px] transition-colors"
+                  className="flex items-center justify-center w-full bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold py-3.5 rounded-xl text-[15.5px] transition-colors"
                   style={{ fontFamily: "var(--font-dm)" }}>
                   Free Consultation
                 </a>

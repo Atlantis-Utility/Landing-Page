@@ -14,27 +14,27 @@ export default function ContactHero() {
 
       <div className="max-w-7xl mx-auto px-2.5 sm:px-4 lg:px-5 xl:px-8 relative">
         {/* Breadcrumb */}
-        <div className="flex items-center gap-2 text-[12px] text-[#7290AA] mb-8" style={{ fontFamily: "var(--font-dm)" }}>
+        <div className="flex items-center gap-2 text-[13px] text-[#7290AA] mb-8" style={{ fontFamily: "var(--font-dm)" }}>
           <a href="/" className="hover:text-[#1B65A6] transition-colors">Home</a>
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
           <span className="text-[#3A5068] font-medium">Contact</span>
         </div>
 
         <Reveal className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] text-[#1B65A6] text-[12px] font-semibold px-4 py-2 rounded-full mb-6 shadow-sm"
+          <div className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] text-[#1B65A6] text-[13px] font-semibold px-4 py-2 rounded-full mb-6 shadow-sm"
             style={{ fontFamily: "var(--font-dm)" }}>
             <span className="w-1.5 h-1.5 rounded-full bg-green-500 pulse-dot" />
             We usually reply within one business day
           </div>
 
           <p className="section-label mb-4">Get In Touch</p>
-          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.06] mb-6"
+          <h1 className="text-5xl sm:text-6xl lg:text-[61.5px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.06] mb-6"
             style={{ fontFamily: "var(--font-syne)" }}>
             Let&apos;s talk about
             <br />
             <span className="text-[#1B65A6]">your business.</span>
           </h1>
-          <p className="text-[#4A6278] text-[17px] leading-relaxed max-w-xl"
+          <p className="text-[#4A6278] text-[18.5px] leading-relaxed max-w-xl"
             style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
             Whether you need a quote for VoIP and internet, help with managed IT, or just have a
             question, our California-based team is ready to help. Call us directly or send a

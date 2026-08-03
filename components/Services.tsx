@@ -34,14 +34,14 @@ const services = [
     title: "LTE Backup Internet",
     desc: "Avoid outages with LTE failover that keeps your team online automatically.",
     href: "/services#lte-backup-internet",
-    image: "/atlantis/lte-5g-internet.jpg",
+    image: "/atlantis/lte-backup-internet.png",
     icon: (<svg width="18" height="18" viewBox="0 0 22 22" fill="none"><path d="M4 6.5A10 10 0 0 1 18 6.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M7 10A5.5 5.5 0 0 1 15 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><circle cx="11" cy="14" r="2" fill="currentColor"/></svg>),
   },
   {
     title: "Telecom Cost Reduction",
     desc: "We help California businesses lower monthly telecom bills without sacrificing quality.",
     href: "/services#telecom-cost-reduction",
-    image: "/atlantis/business-continuity.jpg",
+    image: "/atlantis/cost-reduction.png",
     icon: (<svg width="18" height="18" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" strokeWidth="1.5"/><path d="M11 7v1.5M11 13.5V15M8.5 9.5a2.5 2.5 0 0 1 5 0c0 1.5-2.5 2-2.5 3.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/></svg>),
   },
   {
@@ -90,13 +90,13 @@ export default function Services() {
         <Reveal className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <div className="max-w-xl">
             <p className="section-label mb-3">Telecom & IT Services</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight"
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight leading-tight"
               style={{ fontFamily: "var(--font-syne)" }}>
               Everything your business
               <br className="hidden sm:block" /> needs to stay connected.
             </h2>
           </div>
-          <p className="text-[#4A6278] text-[15px] leading-relaxed max-w-sm"
+          <p className="text-[#4A6278] text-[16.5px] leading-relaxed max-w-sm"
             style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
             From your first phone line to full enterprise IT infrastructure, Atlantis Utility handles design, installation, and ongoing support.
           </p>
@@ -117,16 +117,16 @@ export default function Services() {
                 </div>
                 <div className="p-6 flex flex-col gap-5 flex-1">
                   <div className="flex-1">
-                    <h3 className="text-[14.5px] font-bold text-[#0E1A28] mb-2 group-hover:text-[#1B65A6] transition-colors"
+                    <h3 className="text-[16px] font-bold text-[#0E1A28] mb-2 group-hover:text-[#1B65A6] transition-colors"
                       style={{ fontFamily: "var(--font-syne)" }}>
                       {s.title}
                     </h3>
-                    <p className="text-[13px] text-[#7290AA] leading-relaxed"
+                    <p className="text-[14.5px] text-[#7290AA] leading-relaxed"
                       style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                       {s.desc}
                     </p>
                   </div>
-                  <div className="flex items-center gap-1.5 text-[#1B65A6] text-[12px] font-semibold opacity-0 group-hover:opacity-100 transition-opacity -mb-1"
+                  <div className="flex items-center gap-1.5 text-[#1B65A6] text-[13px] font-semibold opacity-0 group-hover:opacity-100 transition-opacity -mb-1"
                     style={{ fontFamily: "var(--font-dm)" }}>
                     Learn more
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -142,11 +142,11 @@ export default function Services() {
         {/* CTAs */}
         <Reveal delay={0.1} className="flex flex-col sm:flex-row gap-3 mt-10">
           <a href="/services"
-            className="inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[13.5px] shadow-sm">
+            className="inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[15px] shadow-sm">
             All Telecom & IT Services
           </a>
           <a href="#products"
-            className="inline-flex items-center justify-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-6 py-3.5 rounded-xl transition-all text-[13.5px]">
+            className="inline-flex items-center justify-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-6 py-3.5 rounded-xl transition-all text-[15px]">
             VoIP Products
           </a>
         </Reveal>

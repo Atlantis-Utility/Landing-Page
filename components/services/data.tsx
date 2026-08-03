@@ -85,7 +85,7 @@ export const services: ServiceItem[] = [
   {
     id: "lte-backup-internet",
     standalonePath: "/lte-internet",
-    heroImage: "/atlantis/lte-5g-internet.jpg",
+    heroImage: "/atlantis/lte-backup-internet.png",
     tag: "Failover", tagCls: "bg-red-50 text-red-600 border-red-200",
     title: "LTE Backup Internet",
     subtitle: "Automatic failover so an outage never means downtime.",
@@ -98,7 +98,8 @@ export const services: ServiceItem[] = [
   },
   {
     id: "telecom-cost-reduction",
-    heroImage: "/atlantis/business-continuity.jpg",
+    standalonePath: "/telecom-cost-reduction",
+    heroImage: "/atlantis/cost-reduction.png",
     tag: "Cost Savings", tagCls: "bg-blue-50 text-blue-600 border-blue-200",
     title: "Telecom Cost Reduction",
     subtitle: "Lower your monthly bills without cutting features.",
@@ -111,6 +112,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "structured-cabling",
+    standalonePath: "/structured-cabling",
     heroImage: "/atlantis/structured-cabling.png",
     tag: "Infrastructure", tagCls: "bg-emerald-50 text-emerald-700 border-emerald-200",
     title: "Structured Cabling",
@@ -124,6 +126,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "managed-it",
+    standalonePath: "/managed-it-services",
     heroImage: "/atlantis/managed-it-services.jpg",
     tag: "MSP", tagCls: "bg-violet-50 text-violet-600 border-violet-200",
     title: "Managed IT Services (MSP)",
@@ -141,6 +144,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "custom-software",
+    standalonePath: "/custom-software-development",
     heroImage: "/atlantis/cloud-solutions.jpg",
     tag: "Development", tagCls: "bg-amber-50 text-amber-600 border-amber-200",
     title: "Custom Software Development",
@@ -154,6 +158,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "help-desk",
+    standalonePath: "/help-desk-support",
     heroImage: "/atlantis/managed-it-services.jpg",
     tag: "Support", tagCls: "bg-red-50 text-red-600 border-red-200",
     title: "Help Desk & Desk Support",
@@ -167,6 +172,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "network-configuration",
+    standalonePath: "/network-configuration",
     heroImage: "/atlantis/networking-solutions.jpg",
     tag: "Networking", tagCls: "bg-blue-50 text-blue-600 border-blue-200",
     title: "Network Configuration & Design",

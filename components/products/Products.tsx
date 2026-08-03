@@ -19,12 +19,12 @@ export default function Products() {
         <Reveal className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center mb-14">
           <div>
             <p className="section-label mb-3">Hardware and Technology</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-4"
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-4"
               style={{ fontFamily: "var(--font-syne)" }}>
               Hardware and Technology
               <br />Products We Install
             </h2>
-            <p className="text-[#4A6278] text-[15px] leading-relaxed"
+            <p className="text-[#4A6278] text-[16.5px] leading-relaxed"
               style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
               We supply and professionally install the hardware that powers California businesses,
               from VoIP phones to security systems. Performance, reliability, peace of mind.
@@ -38,7 +38,7 @@ export default function Products() {
                 {["VoIP Phones", "PA Systems", "IP Cameras", "SIP Gateways", "CAT6 Cabling", "Analog Adapters"].map((item, i) => (
                   <div key={item} className="bg-white rounded-xl px-4 py-3 flex items-center gap-2.5 border border-[#E2EDF6] shadow-sm">
                     <div className="w-2 h-2 rounded-full bg-[#1B65A6] flex-shrink-0" style={{ opacity: 0.35 + i * 0.12 }} />
-                    <span className="text-[12.5px] font-medium text-[#3A5068]" style={{ fontFamily: "var(--font-dm)" }}>{item}</span>
+                    <span className="text-[14px] font-medium text-[#3A5068]" style={{ fontFamily: "var(--font-dm)" }}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -52,16 +52,16 @@ export default function Products() {
             <StaggerItem key={i}>
               <div className="card p-6 cursor-default bg-white h-full">
                 <div className="flex items-start justify-between gap-3 mb-3">
-                  <h3 className="text-[15px] font-bold text-[#0E1A28] leading-snug"
+                  <h3 className="text-[16.5px] font-bold text-[#0E1A28] leading-snug"
                     style={{ fontFamily: "var(--font-syne)" }}>
                     {p.title}
                   </h3>
-                  <span className={`text-[10px] font-semibold px-2.5 py-1 rounded-full border flex-shrink-0 ${p.tagCls}`}
+                  <span className={`text-[11px] font-semibold px-2.5 py-1 rounded-full border flex-shrink-0 ${p.tagCls}`}
                     style={{ fontFamily: "var(--font-dm)" }}>
                     {p.tag}
                   </span>
                 </div>
-                <p className="text-[13px] text-[#7290AA] leading-relaxed"
+                <p className="text-[14.5px] text-[#7290AA] leading-relaxed"
                   style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                   {p.desc}
                 </p>
@@ -72,7 +72,7 @@ export default function Products() {
 
         <Reveal delay={0.1} className="mt-10">
           <MotionLink href="/products"
-            className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-7 py-3.5 rounded-xl transition-all text-[14px] shadow-sm"
+            className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-7 py-3.5 rounded-xl transition-all text-[15.5px] shadow-sm"
             style={{ fontFamily: "var(--font-dm)" }}>
             Learn about our products
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">

@@ -4,9 +4,9 @@ import { useState } from "react";
 import { Reveal } from "@/components/motion/Reveal";
 
 const inputClasses =
-  "w-full bg-[#F5F8FC] border border-[#E2EDF6] focus:border-[#1B65A6] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1B65A6]/15 rounded-xl px-4 py-3 text-[14px] text-[#0E1A28] placeholder:text-[#7290AA] transition-all";
+  "w-full bg-[#F5F8FC] border border-[#E2EDF6] focus:border-[#1B65A6] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1B65A6]/15 rounded-xl px-4 py-3 text-[15.5px] text-[#0E1A28] placeholder:text-[#7290AA] transition-all";
 
-const labelClasses = "block text-[13px] font-semibold text-[#3A5068] mb-2";
+const labelClasses = "block text-[14.5px] font-semibold text-[#3A5068] mb-2";
 
 function StarPicker({ value, onChange }: { value: number; onChange: (n: number) => void }) {
   const [hover, setHover] = useState<number | null>(null);
@@ -69,10 +69,10 @@ export default function FeedbackForm() {
                   <path d="M8.5 14.5l3.5 3.5 7-8" stroke="#1B65A6" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <h3 className="text-[22px] font-extrabold text-[#0E1A28] mb-3" style={{ fontFamily: "var(--font-syne)" }}>
+              <h3 className="text-[24px] font-extrabold text-[#0E1A28] mb-3" style={{ fontFamily: "var(--font-syne)" }}>
                 Thanks for the feedback!
               </h3>
-              <p className="text-[#4A6278] text-[14.5px] leading-relaxed max-w-sm mb-7" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+              <p className="text-[#4A6278] text-[16px] leading-relaxed max-w-sm mb-7" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                 We appreciate you taking the time to share your experience. Our team reviews every
                 submission and uses it to keep improving our service across California.
               </p>
@@ -81,7 +81,7 @@ export default function FeedbackForm() {
                   setSubmitted(false);
                   setForm({ name: "", company: "", email: "", service: "Business VoIP", rating: 5, review: "" });
                 }}
-                className="inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px] shadow-sm"
+                className="inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[15.5px] shadow-sm"
                 style={{ fontFamily: "var(--font-dm)" }}>
                 Submit another review
               </button>
@@ -89,11 +89,11 @@ export default function FeedbackForm() {
           ) : (
             <>
               <p className="section-label mb-3">Share Your Experience</p>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0E1A28] tracking-tight mb-2"
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight mb-2"
                 style={{ fontFamily: "var(--font-syne)" }}>
                 Leave a review
               </h2>
-              <p className="text-[#7290AA] text-[13.5px] mb-7" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+              <p className="text-[#7290AA] text-[15px] mb-7" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                 Let us know how your service, installation, or support experience went.
               </p>
 
@@ -176,7 +176,7 @@ export default function FeedbackForm() {
 
                 <button
                   type="submit"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-7 py-4 rounded-xl transition-all shadow-md shadow-blue-200/60 text-[14.5px]"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-7 py-4 rounded-xl transition-all shadow-md shadow-blue-200/60 text-[16px]"
                   style={{ fontFamily: "var(--font-dm)" }}
                 >
                   Submit Review

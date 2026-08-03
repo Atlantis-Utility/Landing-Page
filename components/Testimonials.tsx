@@ -32,7 +32,7 @@ export default function Testimonials() {
 
         <div className="text-center max-w-xl mx-auto mb-14">
           <div
-            className="inline-flex items-center gap-2 text-accent text-[11px] font-medium uppercase tracking-widest mb-5"
+            className="inline-flex items-center gap-2 text-accent text-[12px] font-medium uppercase tracking-widest mb-5"
             style={{ fontFamily: "var(--font-dm-sans)" }}
           >
             <div className="w-6 h-[1px] bg-accent" />
@@ -40,7 +40,7 @@ export default function Testimonials() {
             <div className="w-6 h-[1px] bg-accent" />
           </div>
           <h2
-            className="text-4xl font-bold text-white tracking-tight"
+            className="text-5xl font-bold text-white tracking-tight"
             style={{ fontFamily: "var(--font-syne)" }}
           >
             Trusted by operations teams
@@ -64,27 +64,27 @@ export default function Testimonials() {
                 ))}
               </div>
               <p
-                className="text-[14px] text-neutral-400 leading-relaxed flex-1 italic"
+                className="text-[15.5px] text-neutral-400 leading-relaxed flex-1 italic"
                 style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 300 }}
               >
                 "{t.quote}"
               </p>
               <div className="flex items-center gap-3 pt-2 border-t border-neutral-800">
                 <div
-                  className="w-9 h-9 rounded-full bg-accent/20 flex items-center justify-center text-accent text-[12px] font-semibold flex-shrink-0"
+                  className="w-9 h-9 rounded-full bg-accent/20 flex items-center justify-center text-accent text-[13px] font-semibold flex-shrink-0"
                   style={{ fontFamily: "var(--font-syne)" }}
                 >
                   {t.initials}
                 </div>
                 <div>
                   <div
-                    className="text-[13px] font-medium text-white"
+                    className="text-[14.5px] font-medium text-white"
                     style={{ fontFamily: "var(--font-syne)" }}
                   >
                     {t.author}
                   </div>
                   <div
-                    className="text-[11px] text-neutral-500"
+                    className="text-[12px] text-neutral-500"
                     style={{ fontFamily: "var(--font-dm-sans)" }}
                   >
                     {t.role}, {t.company}

@@ -40,11 +40,11 @@ export default function AboutDifference() {
 
         <Reveal className="text-center max-w-2xl mx-auto mb-14">
           <p className="section-label justify-center mb-3"><span>Why Businesses Choose Us</span></p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-4"
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-4"
             style={{ fontFamily: "var(--font-syne)" }}>
             The Atlantis Utility difference
           </h2>
-          <p className="text-[#4A6278] text-[15px] leading-relaxed"
+          <p className="text-[#4A6278] text-[16.5px] leading-relaxed"
             style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
             We are not a national carrier or a big-box reseller. We are a local team that knows
             California businesses and builds solutions that actually fit.
@@ -56,10 +56,10 @@ export default function AboutDifference() {
             <StaggerItem key={i}>
               <div className="card p-6 bg-white h-full">
                 <div className="service-icon mb-5">{r.icon}</div>
-                <h3 className="text-[15px] font-bold text-[#0E1A28] mb-2" style={{ fontFamily: "var(--font-syne)" }}>
+                <h3 className="text-[16.5px] font-bold text-[#0E1A28] mb-2" style={{ fontFamily: "var(--font-syne)" }}>
                   {r.title}
                 </h3>
-                <p className="text-[13.5px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                <p className="text-[15px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                   {r.desc}
                 </p>
               </div>

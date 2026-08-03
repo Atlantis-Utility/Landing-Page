@@ -36,7 +36,7 @@ export default function ServiceLandingPage({ id }: { id: string }) {
         <div className="max-w-7xl mx-auto px-2.5 sm:px-4 lg:px-5 xl:px-8 relative">
           <div className={service.heroImage ? "grid lg:grid-cols-2 gap-10 lg:gap-16 items-center" : ""}>
             <Reveal>
-              <div className="flex items-center gap-2 text-[12px] text-[#7290AA] mb-8" style={{ fontFamily: "var(--font-dm)" }}>
+              <div className="flex items-center gap-2 text-[13px] text-[#7290AA] mb-8" style={{ fontFamily: "var(--font-dm)" }}>
                 <a href="/" className="hover:text-[#1B65A6] transition-colors">Home</a>
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 <a href="/services" className="hover:text-[#1B65A6] transition-colors">Services</a>
@@ -44,18 +44,18 @@ export default function ServiceLandingPage({ id }: { id: string }) {
                 <span className="text-[#3A5068] font-medium">{service.title}</span>
               </div>
 
-              <span className={`inline-flex items-center text-[11px] font-bold px-3 py-1.5 rounded-full border mb-5 ${service.tagCls}`}
+              <span className={`inline-flex items-center text-[12px] font-bold px-3 py-1.5 rounded-full border mb-5 ${service.tagCls}`}
                 style={{ fontFamily: "var(--font-dm)" }}>
                 {service.tag}
               </span>
-              <h1 className="text-4xl sm:text-5xl lg:text-[52px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.08] mb-5"
+              <h1 className="text-5xl sm:text-6xl lg:text-[57px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.08] mb-5"
                 style={{ fontFamily: "var(--font-syne)" }}>
                 {service.title}
               </h1>
-              <p className="text-[#1B65A6] text-[17px] font-semibold mb-4" style={{ fontFamily: "var(--font-dm)" }}>
+              <p className="text-[#1B65A6] text-[18.5px] font-semibold mb-4" style={{ fontFamily: "var(--font-dm)" }}>
                 {service.subtitle}
               </p>
-              <p className="text-[#4A6278] text-[16px] leading-relaxed max-w-2xl"
+              <p className="text-[#4A6278] text-[17.5px] leading-relaxed max-w-2xl"
                 style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                 {service.body[0]}
               </p>
@@ -82,7 +82,7 @@ export default function ServiceLandingPage({ id }: { id: string }) {
                 <IconPanel icon={service.icon} />
                 <div className="absolute -bottom-4 -right-4 bg-white border border-[#E2EDF6] rounded-2xl px-4 py-3 shadow-md hidden sm:flex items-center gap-2.5">
                   <div className="w-2 h-2 rounded-full bg-green-500 pulse-dot flex-shrink-0" />
-                  <span className="text-[12px] font-semibold text-[#0E1A28]" style={{ fontFamily: "var(--font-dm)" }}>
+                  <span className="text-[13px] font-semibold text-[#0E1A28]" style={{ fontFamily: "var(--font-dm)" }}>
                     Local install and support
                   </span>
                 </div>
@@ -92,7 +92,7 @@ export default function ServiceLandingPage({ id }: { id: string }) {
             <Reveal delay={0.1}>
               <div className="space-y-3 mb-7">
                 {(service.heroImage ? service.body.slice(1) : service.body).map((para, i) => (
-                  <p key={i} className="text-[14.5px] text-[#4A6278] leading-relaxed"
+                  <p key={i} className="text-[16px] text-[#4A6278] leading-relaxed"
                     style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                     {para}
                   </p>
@@ -107,7 +107,7 @@ export default function ServiceLandingPage({ id }: { id: string }) {
                         <path d="M2 5l2 2 4-4" stroke="#1B65A6" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="text-[13.5px] text-[#3A5068] font-medium" style={{ fontFamily: "var(--font-dm)" }}>
+                    <span className="text-[15px] text-[#3A5068] font-medium" style={{ fontFamily: "var(--font-dm)" }}>
                       {f}
                     </span>
                   </li>
@@ -116,7 +116,7 @@ export default function ServiceLandingPage({ id }: { id: string }) {
 
               <div className="flex flex-wrap gap-3">
                 <MotionLink href="tel:8056582329"
-                  className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px] shadow-sm"
+                  className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[15.5px] shadow-sm"
                   style={{ fontFamily: "var(--font-dm)" }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                     <path fillRule="evenodd" clipRule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.279-.09.408a12.035 12.035 0 0 0 5.61 5.61c.129.074.307.045.408-.09l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.819V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"/>
@@ -124,7 +124,7 @@ export default function ServiceLandingPage({ id }: { id: string }) {
                   Call Today
                 </MotionLink>
                 <MotionLink href="/contact"
-                  className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px]"
+                  className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-6 py-3.5 rounded-xl transition-all text-[15.5px]"
                   style={{ fontFamily: "var(--font-dm)" }}>
                   Schedule a Consultation
                 </MotionLink>
@@ -140,7 +140,7 @@ export default function ServiceLandingPage({ id }: { id: string }) {
         <div className="max-w-7xl mx-auto px-2.5 sm:px-4 lg:px-5 xl:px-8">
           <Reveal className="mb-8">
             <p className="section-label mb-3">Explore More</p>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0E1A28] tracking-tight" style={{ fontFamily: "var(--font-syne)" }}>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight" style={{ fontFamily: "var(--font-syne)" }}>
               Other services businesses pair with this
             </h2>
           </Reveal>
@@ -151,10 +151,10 @@ export default function ServiceLandingPage({ id }: { id: string }) {
                   className="card group p-6 flex flex-col gap-4 no-underline bg-white cursor-pointer h-full">
                   <div className="service-icon">{r.icon}</div>
                   <div>
-                    <h3 className="text-[14.5px] font-bold text-[#0E1A28] mb-2 group-hover:text-[#1B65A6] transition-colors" style={{ fontFamily: "var(--font-syne)" }}>
+                    <h3 className="text-[16px] font-bold text-[#0E1A28] mb-2 group-hover:text-[#1B65A6] transition-colors" style={{ fontFamily: "var(--font-syne)" }}>
                       {r.title}
                     </h3>
-                    <p className="text-[13px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                    <p className="text-[14.5px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                       {r.subtitle}
                     </p>
                   </div>
@@ -163,7 +163,7 @@ export default function ServiceLandingPage({ id }: { id: string }) {
             ))}
           </Stagger>
           <Reveal delay={0.1} className="mt-8">
-            <a href="/services" className="inline-flex items-center gap-2 text-[#1B65A6] font-semibold text-[14px]" style={{ fontFamily: "var(--font-dm)" }}>
+            <a href="/services" className="inline-flex items-center gap-2 text-[#1B65A6] font-semibold text-[15.5px]" style={{ fontFamily: "var(--font-dm)" }}>
               View all Telecom &amp; IT Services
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

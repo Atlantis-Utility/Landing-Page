@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { MotionLink } from "@/components/motion/MotionLink";
 
@@ -21,9 +20,9 @@ const topics = [
 ];
 
 const inputClasses =
-  "w-full bg-[#F5F8FC] border border-[#E2EDF6] focus:border-[#1B65A6] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1B65A6]/15 rounded-xl px-4 py-3 text-[14px] text-[#0E1A28] placeholder:text-[#7290AA] transition-all";
+  "w-full bg-[#F5F8FC] border border-[#E2EDF6] focus:border-[#1B65A6] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1B65A6]/15 rounded-xl px-4 py-3 text-[15.5px] text-[#0E1A28] placeholder:text-[#7290AA] transition-all";
 
-const labelClasses = "block text-[13px] font-semibold text-[#3A5068] mb-2";
+const labelClasses = "block text-[14.5px] font-semibold text-[#3A5068] mb-2";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -61,16 +60,16 @@ export default function ContactForm() {
                       <path d="M8.5 14.5l3.5 3.5 7-8" stroke="#1B65A6" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
-                  <h3 className="text-[22px] font-extrabold text-[#0E1A28] mb-3" style={{ fontFamily: "var(--font-syne)" }}>
+                  <h3 className="text-[24px] font-extrabold text-[#0E1A28] mb-3" style={{ fontFamily: "var(--font-syne)" }}>
                     Thanks, we&apos;ll be in touch.
                   </h3>
-                  <p className="text-[#4A6278] text-[14.5px] leading-relaxed max-w-sm mb-7" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                  <p className="text-[#4A6278] text-[16px] leading-relaxed max-w-sm mb-7" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                     We received your message and a member of our California team will reach out
                     within one business day. If it&apos;s urgent, feel free to call us directly.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <MotionLink href="tel:8056582329"
-                      className="inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px] shadow-sm"
+                      className="inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[15.5px] shadow-sm"
                       style={{ fontFamily: "var(--font-dm)" }}>
                       <PhoneIcon />
                       (805) 658-2329
@@ -80,7 +79,7 @@ export default function ContactForm() {
                         setSubmitted(false);
                         setForm({ name: "", company: "", email: "", phone: "", topic: topics[0], message: "" });
                       }}
-                      className="inline-flex items-center justify-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px]"
+                      className="inline-flex items-center justify-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-6 py-3.5 rounded-xl transition-all text-[15.5px]"
                       style={{ fontFamily: "var(--font-dm)" }}>
                       Send another message
                     </button>
@@ -89,11 +88,11 @@ export default function ContactForm() {
               ) : (
                 <>
                   <p className="section-label mb-3">Send A Message</p>
-                  <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0E1A28] tracking-tight mb-2"
+                  <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight mb-2"
                     style={{ fontFamily: "var(--font-syne)" }}>
                     Tell us about your business
                   </h2>
-                  <p className="text-[#7290AA] text-[13.5px] mb-7" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                  <p className="text-[#7290AA] text-[15px] mb-7" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                     Fill out the form and our team will follow up with next steps.
                   </p>
 
@@ -173,7 +172,7 @@ export default function ContactForm() {
 
                     <button
                       type="submit"
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-7 py-4 rounded-xl transition-all shadow-md shadow-blue-200/60 text-[14.5px]"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-7 py-4 rounded-xl transition-all shadow-md shadow-blue-200/60 text-[16px]"
                       style={{ fontFamily: "var(--font-dm)" }}
                     >
                       Send Message
@@ -190,8 +189,28 @@ export default function ContactForm() {
           {/* Info panel */}
           <Stagger className="lg:col-span-2 space-y-4">
             <StaggerItem>
-              <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-[#E2EDF6]">
-                <Image src="/atlantis/managed-it-services.jpg" alt="Atlantis Utility support team" fill className="object-cover" />
+              <div className="card p-6 bg-white">
+                <p className="text-[13px] font-bold text-[#0E1A28] mb-4" style={{ fontFamily: "var(--font-syne)" }}>
+                  Why local businesses choose us
+                </p>
+                <div className="grid grid-cols-2 gap-5">
+                  <div>
+                    <div className="text-[26px] font-extrabold text-[#1B65A6] tracking-tight" style={{ fontFamily: "var(--font-syne)" }}>15+</div>
+                    <div className="text-[13px] text-[#7290AA]" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>Years local</div>
+                  </div>
+                  <div>
+                    <div className="text-[26px] font-extrabold text-[#1B65A6] tracking-tight" style={{ fontFamily: "var(--font-syne)" }}>500+</div>
+                    <div className="text-[13px] text-[#7290AA]" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>Businesses served</div>
+                  </div>
+                  <div>
+                    <div className="text-[26px] font-extrabold text-[#1B65A6] tracking-tight" style={{ fontFamily: "var(--font-syne)" }}>99.9%</div>
+                    <div className="text-[13px] text-[#7290AA]" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>Uptime SLA</div>
+                  </div>
+                  <div>
+                    <div className="text-[26px] font-extrabold text-[#1B65A6] tracking-tight" style={{ fontFamily: "var(--font-syne)" }}>24/7</div>
+                    <div className="text-[13px] text-[#7290AA]" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>Support</div>
+                  </div>
+                </div>
               </div>
             </StaggerItem>
 
@@ -199,11 +218,11 @@ export default function ContactForm() {
               <div className="card p-6 bg-white flex items-start gap-4">
                 <div className="service-icon"><PhoneIcon /></div>
                 <div>
-                  <div className="text-[13px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>Call us</div>
-                  <a href="tel:8056582329" className="text-[15px] font-semibold text-[#1B65A6] hover:text-[#134d80] transition-colors" style={{ fontFamily: "var(--font-dm)" }}>
+                  <div className="text-[14.5px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>Call us</div>
+                  <a href="tel:8056582329" className="text-[16.5px] font-semibold text-[#1B65A6] hover:text-[#134d80] transition-colors" style={{ fontFamily: "var(--font-dm)" }}>
                     (805) 658-2329
                   </a>
-                  <p className="text-[12.5px] text-[#7290AA] mt-1" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                  <p className="text-[14px] text-[#7290AA] mt-1" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                     Mon &ndash; Fri, 8 AM &ndash; 5 PM
                   </p>
                 </div>
@@ -219,9 +238,9 @@ export default function ContactForm() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-[13px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>Visit our office</div>
+                  <div className="text-[14.5px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>Visit our office</div>
                   <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
-                    className="text-[14px] text-[#4A6278] hover:text-[#1B65A6] transition-colors leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                    className="text-[15.5px] text-[#4A6278] hover:text-[#1B65A6] transition-colors leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                     1445 Donlon St<br />Ventura, CA 93003
                   </a>
                 </div>
@@ -237,8 +256,8 @@ export default function ContactForm() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-[13px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>Business hours</div>
-                  <div className="text-[13px] text-[#4A6278] space-y-0.5" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                  <div className="text-[14.5px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>Business hours</div>
+                  <div className="text-[14.5px] text-[#4A6278] space-y-0.5" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                     <div className="flex justify-between gap-6"><span>Monday &ndash; Friday</span><span className="text-[#0E1A28] font-medium">8 AM &ndash; 5 PM</span></div>
                     <div className="flex justify-between gap-6"><span>Saturday &ndash; Sunday</span><span className="text-[#7290AA]">Closed</span></div>
                   </div>
@@ -251,11 +270,11 @@ export default function ContactForm() {
                 <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-[#1B65A6]/20 blur-2xl pointer-events-none" />
                 <div className="flex items-center gap-2 mb-2 relative">
                   <span className="w-1.5 h-1.5 rounded-full bg-green-500 pulse-dot" />
-                  <span className="text-[11px] font-semibold uppercase tracking-widest text-[#7EB8E8]" style={{ fontFamily: "var(--font-dm)" }}>
+                  <span className="text-[12px] font-semibold uppercase tracking-widest text-[#7EB8E8]" style={{ fontFamily: "var(--font-dm)" }}>
                     24/7 Support
                   </span>
                 </div>
-                <p className="text-white text-[14px] leading-relaxed relative" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                <p className="text-white text-[15.5px] leading-relaxed relative" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                   Existing client with an urgent issue? Call us any time &mdash; our support team never sleeps.
                 </p>
               </div>

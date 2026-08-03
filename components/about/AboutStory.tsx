@@ -17,12 +17,12 @@ export default function AboutStory() {
           {/* Left: copy */}
           <Reveal>
             <p className="section-label mb-3">Our Story</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-5"
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-5"
               style={{ fontFamily: "var(--font-syne)" }}>
               Built for California
               <br />businesses, not call centers.
             </h2>
-            <div className="space-y-4 text-[#4A6278] text-[15px] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+            <div className="space-y-4 text-[#4A6278] text-[16.5px] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
               <p>
                 Atlantis Utility started with a simple observation: business owners were tired of
                 being routed through national carriers, offshore support queues, and reseller
@@ -54,10 +54,10 @@ export default function AboutStory() {
                   <circle cx="11" cy="11" r="3" fill="white"/>
                 </svg>
               </div>
-              <h3 className="text-[18px] font-bold text-[#0E1A28] mb-3" style={{ fontFamily: "var(--font-syne)" }}>
+              <h3 className="text-[20px] font-bold text-[#0E1A28] mb-3" style={{ fontFamily: "var(--font-syne)" }}>
                 Our mission
               </h3>
-              <p className="text-[#4A6278] text-[14.5px] leading-relaxed mb-8" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+              <p className="text-[#4A6278] text-[16px] leading-relaxed mb-8" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                 Keep California businesses connected and running with honest pricing, fast local
                 support, and technology that is actually built around how they work &mdash; not a
                 one-size-fits-all package.
@@ -67,11 +67,11 @@ export default function AboutStory() {
                 {stats.map((s) => (
                   <StaggerItem key={s.label}>
                     <div className="bg-white border border-[#E2EDF6] rounded-2xl p-4 text-center shadow-sm">
-                      <div className="text-[22px] sm:text-[24px] font-extrabold text-[#1B65A6] leading-none mb-1"
+                      <div className="text-[24px] sm:text-[26.5px] font-extrabold text-[#1B65A6] leading-none mb-1"
                         style={{ fontFamily: "var(--font-syne)" }}>
                         <Counter value={s.value} />
                       </div>
-                      <div className="text-[11px] text-[#7290AA] font-medium" style={{ fontFamily: "var(--font-dm)" }}>
+                      <div className="text-[12px] text-[#7290AA] font-medium" style={{ fontFamily: "var(--font-dm)" }}>
                         {s.label}
                       </div>
                     </div>

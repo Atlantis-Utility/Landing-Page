@@ -16,7 +16,7 @@ export default function HardwareGallery() {
       <div className="max-w-7xl mx-auto px-2.5 sm:px-4 lg:px-5 xl:px-8">
         <Reveal className="max-w-2xl mb-10">
           <p className="section-label mb-3">Hardware We Install</p>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0E1A28] tracking-tight" style={{ fontFamily: "var(--font-syne)" }}>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight" style={{ fontFamily: "var(--font-syne)" }}>
             Real hardware, sourced and configured by our team
           </h2>
         </Reveal>
@@ -28,10 +28,10 @@ export default function HardwareGallery() {
                 <div className="w-full aspect-square flex items-center justify-center mb-3">
                   <Image src={h.src} alt={h.name} width={160} height={160} className="max-w-full max-h-full h-auto w-auto object-contain" />
                 </div>
-                <div className="text-[12.5px] font-bold text-[#0E1A28] leading-snug" style={{ fontFamily: "var(--font-syne)" }}>
+                <div className="text-[14px] font-bold text-[#0E1A28] leading-snug" style={{ fontFamily: "var(--font-syne)" }}>
                   {h.name}
                 </div>
-                <div className="text-[11px] text-[#7290AA] mt-1 leading-snug" style={{ fontFamily: "var(--font-dm)" }}>
+                <div className="text-[12px] text-[#7290AA] mt-1 leading-snug" style={{ fontFamily: "var(--font-dm)" }}>
                   {h.desc}
                 </div>
               </div>

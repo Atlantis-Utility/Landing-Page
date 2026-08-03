@@ -27,17 +27,17 @@ export default function ThankYouContent() {
             </svg>
           </div>
 
-          <div className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] text-[#1B65A6] text-[12px] font-semibold px-4 py-2 rounded-full shadow-sm mb-6"
+          <div className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] text-[#1B65A6] text-[13px] font-semibold px-4 py-2 rounded-full shadow-sm mb-6"
             style={{ fontFamily: "var(--font-dm)" }}>
             <span className="w-1.5 h-1.5 rounded-full bg-green-500 pulse-dot" />
             Submission received
           </div>
 
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight leading-[1.08] mb-5"
+          <h1 className="text-5xl sm:text-6xl font-extrabold text-[#0E1A28] tracking-tight leading-[1.08] mb-5"
             style={{ fontFamily: "var(--font-syne)" }}>
             Thanks &mdash; we&apos;ll be in touch.
           </h1>
-          <p className="text-[#4A6278] text-[16px] leading-relaxed max-w-lg mb-10"
+          <p className="text-[#4A6278] text-[17.5px] leading-relaxed max-w-lg mb-10"
             style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
             We received your request and a member of our California team will follow up within
             one business day. If it&apos;s urgent, feel free to call us directly &mdash; a real
@@ -46,19 +46,19 @@ export default function ThankYouContent() {
 
           <div className="flex flex-col sm:flex-row gap-3 mb-10">
             <MotionLink href="/"
-              className="inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-7 py-3.5 rounded-xl transition-all text-[14px] shadow-sm"
+              className="inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-7 py-3.5 rounded-xl transition-all text-[15.5px] shadow-sm"
               style={{ fontFamily: "var(--font-dm)" }}>
               Back to Home
             </MotionLink>
             <MotionLink href="tel:8056582329"
-              className="inline-flex items-center justify-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-7 py-3.5 rounded-xl transition-all text-[14px]"
+              className="inline-flex items-center justify-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-7 py-3.5 rounded-xl transition-all text-[15.5px]"
               style={{ fontFamily: "var(--font-dm)" }}>
               <PhoneIcon />
               (805) 658-2329
             </MotionLink>
           </div>
 
-          <div className="flex items-center gap-6 text-[13.5px]" style={{ fontFamily: "var(--font-dm)" }}>
+          <div className="flex items-center gap-6 text-[15px]" style={{ fontFamily: "var(--font-dm)" }}>
             <a href="/services" className="text-[#1B65A6] font-semibold hover:text-[#134d80] transition-colors inline-flex items-center gap-1.5">
               Explore our services
               <svg width="12" height="12" viewBox="0 0 14 14" fill="none">

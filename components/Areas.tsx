@@ -22,11 +22,11 @@ export default function Areas() {
           <p className="section-label justify-center mb-3">
             <span>Coverage Area</span>
           </p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight mb-4"
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight mb-4"
             style={{ fontFamily: "var(--font-syne)" }}>
             Areas We Serve Across<br />California
           </h2>
-          <p className="text-[#4A6278] text-[15px] leading-relaxed"
+          <p className="text-[#4A6278] text-[16.5px] leading-relaxed"
             style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
             We proudly serve businesses throughout California, from our Ventura home base
             to coastal and inland communities statewide. Wherever you are, we offer on-site
@@ -52,18 +52,18 @@ export default function Areas() {
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-2">
                       <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${a.home ? "bg-white/70" : "bg-[#1B65A6]/40"}`} />
-                      <h3 className={`text-[14px] font-bold ${a.home ? "text-white" : "text-[#1B65A6]"}`}
+                      <h3 className={`text-[15.5px] font-bold ${a.home ? "text-white" : "text-[#1B65A6]"}`}
                         style={{ fontFamily: "var(--font-syne)" }}>
                         {a.city}
                       </h3>
                     </div>
                     {a.home && (
-                      <span className="text-[9px] font-bold bg-white/20 text-white px-2 py-0.5 rounded-full border border-white/25">
+                      <span className="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded-full border border-white/25">
                         HQ
                       </span>
                     )}
                   </div>
-                  <p className={`text-[12.5px] leading-relaxed ${a.home ? "text-blue-100/90" : "text-[#7290AA]"}`}
+                  <p className={`text-[14px] leading-relaxed ${a.home ? "text-blue-100/90" : "text-[#7290AA]"}`}
                     style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                     {a.desc}
                   </p>

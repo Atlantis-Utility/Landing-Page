@@ -47,7 +47,7 @@ export default function AboutHowWeWork() {
         {/* How we work */}
         <Reveal className="max-w-2xl mb-14">
           <p className="section-label mb-3">How We Work</p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight"
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight leading-tight"
             style={{ fontFamily: "var(--font-syne)" }}>
             From first call to
             <br />ongoing support.
@@ -58,13 +58,13 @@ export default function AboutHowWeWork() {
           {steps.map((s) => (
             <StaggerItem key={s.step}>
               <div className="card p-6 bg-white h-full">
-                <div className="text-[28px] font-extrabold text-[#C0D2E5] mb-4 leading-none" style={{ fontFamily: "var(--font-syne)" }}>
+                <div className="text-[31px] font-extrabold text-[#C0D2E5] mb-4 leading-none" style={{ fontFamily: "var(--font-syne)" }}>
                   {s.step}
                 </div>
-                <h3 className="text-[14.5px] font-bold text-[#0E1A28] mb-2" style={{ fontFamily: "var(--font-syne)" }}>
+                <h3 className="text-[16px] font-bold text-[#0E1A28] mb-2" style={{ fontFamily: "var(--font-syne)" }}>
                   {s.title}
                 </h3>
-                <p className="text-[13px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                <p className="text-[14.5px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                   {s.desc}
                 </p>
               </div>
@@ -76,18 +76,18 @@ export default function AboutHowWeWork() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <Reveal className="lg:sticky lg:top-28">
             <p className="section-label mb-3">Who We Serve</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-5"
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-5"
               style={{ fontFamily: "var(--font-syne)" }}>
               Businesses across
               <br />California, of every size.
             </h2>
-            <p className="text-[#4A6278] text-[15px] leading-relaxed mb-8"
+            <p className="text-[#4A6278] text-[16.5px] leading-relaxed mb-8"
               style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
               From a single storefront to a multi-location operation, we build telecom and IT
               foundations that scale with your business instead of holding it back.
             </p>
             <MotionLink href="/contact"
-              className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px] shadow-sm"
+              className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[15.5px] shadow-sm"
               style={{ fontFamily: "var(--font-dm)" }}>
               Talk to our team
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -108,10 +108,10 @@ export default function AboutHowWeWork() {
                     </svg>
                   </div>
                   <div>
-                    <div className="text-[14px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>
+                    <div className="text-[15.5px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>
                       {a.title}
                     </div>
-                    <div className="text-[13px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                    <div className="text-[14.5px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                       {a.desc}
                     </div>
                   </div>

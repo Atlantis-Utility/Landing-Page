@@ -26,7 +26,7 @@ export default function ServiceDetail() {
                 )}
                 <div className="absolute -bottom-4 -right-4 bg-white border border-[#E2EDF6] rounded-2xl px-4 py-3 shadow-md hidden sm:flex items-center gap-2.5">
                   <div className="w-2 h-2 rounded-full bg-green-500 pulse-dot flex-shrink-0" />
-                  <span className="text-[12px] font-semibold text-[#0E1A28]" style={{ fontFamily: "var(--font-dm)" }}>
+                  <span className="text-[13px] font-semibold text-[#0E1A28]" style={{ fontFamily: "var(--font-dm)" }}>
                     Local install and support
                   </span>
                 </div>
@@ -35,24 +35,24 @@ export default function ServiceDetail() {
               {/* Content */}
               <Reveal delay={0.1}>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className={`text-[11px] font-bold px-3 py-1.5 rounded-full border ${s.tagCls}`}
+                  <span className={`text-[12px] font-bold px-3 py-1.5 rounded-full border ${s.tagCls}`}
                     style={{ fontFamily: "var(--font-dm)" }}>
                     {s.tag}
                   </span>
                 </div>
 
-                <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-2"
+                <h2 className="text-3xl sm:text-4xl lg:text-[37.5px] font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-2"
                   style={{ fontFamily: "var(--font-syne)" }}>
                   {s.title}
                 </h2>
-                <p className="text-[15px] font-semibold text-[#1B65A6] mb-5"
+                <p className="text-[16.5px] font-semibold text-[#1B65A6] mb-5"
                   style={{ fontFamily: "var(--font-dm)" }}>
                   {s.subtitle}
                 </p>
 
                 <div className="space-y-3 mb-7">
                   {s.body.map((para, i) => (
-                    <p key={i} className="text-[14.5px] text-[#4A6278] leading-relaxed"
+                    <p key={i} className="text-[16px] text-[#4A6278] leading-relaxed"
                       style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                       {para}
                     </p>
@@ -67,7 +67,7 @@ export default function ServiceDetail() {
                           <path d="M2 5l2 2 4-4" stroke="#1B65A6" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                       </div>
-                      <span className="text-[13.5px] text-[#3A5068] font-medium" style={{ fontFamily: "var(--font-dm)" }}>
+                      <span className="text-[15px] text-[#3A5068] font-medium" style={{ fontFamily: "var(--font-dm)" }}>
                         {f}
                       </span>
                     </li>
@@ -76,7 +76,7 @@ export default function ServiceDetail() {
 
                 {s.platforms && (
                   <div className="flex items-center gap-4 mb-8">
-                    <span className="text-[11.5px] font-semibold text-[#7290AA] uppercase tracking-wide" style={{ fontFamily: "var(--font-dm)" }}>
+                    <span className="text-[12.5px] font-semibold text-[#7290AA] uppercase tracking-wide" style={{ fontFamily: "var(--font-dm)" }}>
                       Supports
                     </span>
                     {s.platforms.map((p) => (
@@ -89,7 +89,7 @@ export default function ServiceDetail() {
 
                 <div className="flex flex-wrap gap-3">
                   <MotionLink href="tel:8056582329"
-                    className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px] shadow-sm"
+                    className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[15.5px] shadow-sm"
                     style={{ fontFamily: "var(--font-dm)" }}>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                       <path fillRule="evenodd" clipRule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.279-.09.408a12.035 12.035 0 0 0 5.61 5.61c.129.074.307.045.408-.09l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.819V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"/>
@@ -97,7 +97,7 @@ export default function ServiceDetail() {
                     Call Today
                   </MotionLink>
                   <MotionLink href="/contact"
-                    className="inline-flex items-center gap-2 border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px]"
+                    className="inline-flex items-center gap-2 border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-6 py-3.5 rounded-xl transition-all text-[15.5px]"
                     style={{ fontFamily: "var(--font-dm)" }}>
                     Schedule a Consultation
                   </MotionLink>

@@ -84,7 +84,7 @@ const e911Bullets = [
 
 function Heading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="text-[19px] font-extrabold text-[#0E1A28] tracking-tight mt-10 mb-3 first:mt-0"
+    <h2 className="text-[21px] font-extrabold text-[#0E1A28] tracking-tight mt-10 mb-3 first:mt-0"
       style={{ fontFamily: "var(--font-syne)" }}>
       {children}
     </h2>
@@ -93,7 +93,7 @@ function Heading({ children }: { children: React.ReactNode }) {
 
 function Clause({ title, body }: { title: string; body: string }) {
   return (
-    <p className="text-[14.5px] text-[#4A6278] leading-[1.8] mb-5" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+    <p className="text-[16px] text-[#4A6278] leading-[1.8] mb-5" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
       <span className="font-semibold text-[#0E1A28]">{title} </span>
       {body}
     </p>
@@ -108,7 +108,7 @@ export default function TermsContent() {
           <article className="card p-7 sm:p-10 bg-white">
 
             <Heading>SERVICES &amp; TERMS OF AGREEMENT</Heading>
-            <p className="text-[14.5px] text-[#4A6278] leading-[1.8] mb-5" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+            <p className="text-[16px] text-[#4A6278] leading-[1.8] mb-5" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
               <span className="font-semibold text-[#0E1A28]">SERVICES </span>
               The telecommunications services offered by Atlantis Utility Inc., under this Agreement are offered pursuant to the Terms of Service (TOS) listed on Atlantis Utility Inc., website located at www.Atlantisutility.com. The services provided hereunder are offered under, and pursuant to, the pricing, terms, conditions and limitations as set forth in such tariff. Customer agree to abide by and be bound by the terms and conditions and all non-recurring and monthly recurring charges of said tariff and said tariff is fully incorporated herein.
             </p>
@@ -123,7 +123,7 @@ export default function TermsContent() {
             ))}
 
             <Heading>16. APPLICABLE LAW</Heading>
-            <p className="text-[14.5px] text-[#4A6278] leading-[1.8] mb-5" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+            <p className="text-[16px] text-[#4A6278] leading-[1.8] mb-5" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
               This Agreement shall be governed under the laws of the state of California; Customer agrees to judicial venue in Ventura County. This agreement and all rates, services and products provided hereunder is made subject to all present and future valid orders and regulations of and tariffs filed with any regulatory body having jurisdiction over the subject matter hereof, and to the laws of the United States, and of its states, or any foreign governmental agency having jurisdiction. In the event this Agreement, or any of its provisions, shall be contrary to or in this Agreement shall be deemed modified to the extent necessary to comply with any such order, rule, regulation or law materially affects the rights of either party hereunder, then this Agreement may be terminated upon written notice by one party to the other party.
             </p>
 
@@ -132,17 +132,17 @@ export default function TermsContent() {
             ))}
 
             <Heading>19. E911 CHARACTERISTICS AND LIMITATIONS.</Heading>
-            <p className="text-[13.5px] text-[#4A6278] leading-[1.8] mb-5 uppercase" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+            <p className="text-[15px] text-[#4A6278] leading-[1.8] mb-5 uppercase" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
               Customer ACKNOWLEDGES THAT Atlantis Utility Inc., E911 SERVICE HAS CERTAIN CHARACTERISTICS THAT DISTINGUISH IT FROM TRADITIONAL, LEGACY, CIRCUIT-SWITCHED 911 SERVICE. THESE CHARACTERISTICS MAY MAKE Atlantis Utility Inc., INC E911 SERVICES UNSUITABLE FOR SOME CUSTOMERS. CUSTOMER ACKNOWLEDGES THAT IT IS CUSTOMER&rsquo;S RESPONSIBILITY TO DETERMINE THE TECHNOLOGY OR COMBINATION OF TECHNOLOGIES BEST SUITED TO MEET CUSTOMER&rsquo;S EMERGENCY CALLING NEEDS, AND TO MAKE THE NECESSARY PROVISIONS FOR ACCESS TO EMERGENCY CALLING SERVICES (SUCH AS MAINTAINING A CONVENTIONAL LANDLINE PHONE OR WIRELESS PHONE AS A BACKUP MEANS OF COMPLETING EMERGENCY CALLS).
             </p>
-            <p className="text-[13.5px] text-[#4A6278] leading-[1.8] mb-5 uppercase" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+            <p className="text-[15px] text-[#4A6278] leading-[1.8] mb-5 uppercase" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
               IN ADDITION TO THE LIMITATIONS SET FORTH ABOVE, THE FOLLOWING ARE SOME OF THE KEY CHARACTERISTICS THAT DISTINGUISH Atlantis Utility Inc., INC&rsquo;S E911 SERVICE FROM TRADITIONAL, LEGACY, CIRCUIT-SWITCHED 911 SERVICE:
             </p>
             <ul className="space-y-4 mb-2">
               {e911Bullets.map((item, i) => (
                 <li key={i} className="flex gap-3">
                   <span className="text-[#1B65A6] font-bold flex-shrink-0">&bull;</span>
-                  <span className="text-[13px] text-[#4A6278] leading-[1.8] uppercase" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                  <span className="text-[14.5px] text-[#4A6278] leading-[1.8] uppercase" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                     {item}
                   </span>
                 </li>

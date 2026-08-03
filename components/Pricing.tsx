@@ -60,7 +60,7 @@ export default function Pricing() {
 
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div
-            className="inline-flex items-center gap-2 text-accent text-[11px] font-medium uppercase tracking-widest mb-5"
+            className="inline-flex items-center gap-2 text-accent text-[12px] font-medium uppercase tracking-widest mb-5"
             style={{ fontFamily: "var(--font-dm-sans)" }}
           >
             <div className="w-6 h-[1px] bg-accent" />
@@ -68,7 +68,7 @@ export default function Pricing() {
             <div className="w-6 h-[1px] bg-accent" />
           </div>
           <h2
-            className="text-4xl md:text-5xl font-bold text-white leading-tight tracking-tight mb-5"
+            className="text-5xl md:text-6xl font-bold text-white leading-tight tracking-tight mb-5"
             style={{ fontFamily: "var(--font-syne)" }}
           >
             Transparent pricing.
@@ -76,7 +76,7 @@ export default function Pricing() {
             <span className="text-neutral-500">No hidden fees.</span>
           </h2>
           <p
-            className="text-neutral-400 text-[16px] leading-relaxed"
+            className="text-neutral-400 text-[17.5px] leading-relaxed"
             style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 300 }}
           >
             All plans include a 14-day free trial. No credit card required.
@@ -95,7 +95,7 @@ export default function Pricing() {
             >
               {p.highlight && (
                 <div
-                  className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-[11px] font-medium px-4 py-1 rounded-full"
+                  className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-[12px] font-medium px-4 py-1 rounded-full"
                   style={{ fontFamily: "var(--font-dm-sans)" }}
                 >
                   Most popular
@@ -104,30 +104,30 @@ export default function Pricing() {
 
               <div className="mb-6">
                 <div
-                  className="text-[12px] font-medium uppercase tracking-widest text-neutral-500 mb-3"
+                  className="text-[13px] font-medium uppercase tracking-widest text-neutral-500 mb-3"
                   style={{ fontFamily: "var(--font-dm-sans)" }}
                 >
                   {p.name}
                 </div>
                 <div className="flex items-baseline gap-1 mb-3">
                   {p.price !== "Custom" && (
-                    <span className="text-neutral-500 text-[16px]" style={{ fontFamily: "var(--font-syne)" }}>$</span>
+                    <span className="text-neutral-500 text-[17.5px]" style={{ fontFamily: "var(--font-syne)" }}>$</span>
                   )}
                   <span
-                    className="text-4xl font-bold text-white"
+                    className="text-5xl font-bold text-white"
                     style={{ fontFamily: "var(--font-syne)" }}
                   >
                     {p.price}
                   </span>
                   <span
-                    className="text-neutral-500 text-[13px]"
+                    className="text-neutral-500 text-[14.5px]"
                     style={{ fontFamily: "var(--font-dm-sans)" }}
                   >
                     {p.period}
                   </span>
                 </div>
                 <p
-                  className="text-[13px] text-neutral-500 leading-relaxed"
+                  className="text-[14.5px] text-neutral-500 leading-relaxed"
                   style={{ fontFamily: "var(--font-dm-sans)" }}
                 >
                   {p.desc}
@@ -154,7 +154,7 @@ export default function Pricing() {
                       />
                     </svg>
                     <span
-                      className="text-[13px] text-neutral-400"
+                      className="text-[14.5px] text-neutral-400"
                       style={{ fontFamily: "var(--font-dm-sans)" }}
                     >
                       {f}
@@ -165,7 +165,7 @@ export default function Pricing() {
 
               <a
                 href="#"
-                className={`w-full text-center py-3 rounded-xl text-[14px] font-medium transition-all duration-150 ${
+                className={`w-full text-center py-3 rounded-xl text-[15.5px] font-medium transition-all duration-150 ${
                   p.highlight
                     ? "bg-accent hover:bg-accent-dark text-white glow-blue-sm"
                     : "border border-neutral-700 hover:border-neutral-500 text-neutral-300 hover:text-white"

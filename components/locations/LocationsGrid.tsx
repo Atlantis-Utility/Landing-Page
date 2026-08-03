@@ -20,22 +20,22 @@ export default function LocationsGrid() {
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
                     <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${loc.home ? "bg-white/70" : "bg-[#1B65A6]/40"}`} />
-                    <h3 className={`text-[16px] font-bold ${loc.home ? "text-white" : "text-[#0E1A28]"}`}
+                    <h3 className={`text-[17.5px] font-bold ${loc.home ? "text-white" : "text-[#0E1A28]"}`}
                       style={{ fontFamily: "var(--font-syne)" }}>
                       {loc.city}, CA
                     </h3>
                   </div>
                   {loc.home && (
-                    <span className="text-[9px] font-bold bg-white/20 text-white px-2 py-0.5 rounded-full border border-white/25">
+                    <span className="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded-full border border-white/25">
                       HQ
                     </span>
                   )}
                 </div>
-                <p className={`text-[13px] leading-relaxed mb-5 flex-1 ${loc.home ? "text-blue-100/90" : "text-[#7290AA]"}`}
+                <p className={`text-[14.5px] leading-relaxed mb-5 flex-1 ${loc.home ? "text-blue-100/90" : "text-[#7290AA]"}`}
                   style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                   {loc.short}
                 </p>
-                <span className={`inline-flex items-center gap-1.5 text-[13px] font-semibold ${loc.home ? "text-white" : "text-[#1B65A6]"}`}
+                <span className={`inline-flex items-center gap-1.5 text-[14.5px] font-semibold ${loc.home ? "text-white" : "text-[#1B65A6]"}`}
                   style={{ fontFamily: "var(--font-dm)" }}>
                   View {loc.city} services
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">

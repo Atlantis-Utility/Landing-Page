@@ -22,11 +22,11 @@ export default function NetworkReliability() {
           <p className="section-label justify-center mb-3">
             <span>Built for Reliability</span>
           </p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight mb-4"
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight mb-4"
             style={{ fontFamily: "var(--font-syne)" }}>
             How the layers work together
           </h2>
-          <p className="text-[#4A6278] text-[15px] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+          <p className="text-[#4A6278] text-[16.5px] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
             Every service we install draws on these network layers. None of them are meant
             to be perfect alone — together, they're designed so your business stays
             connected even when one layer has a bad day.
@@ -37,7 +37,7 @@ export default function NetworkReliability() {
 
           {/* Uptime bars */}
           <Reveal className="card p-7 bg-white">
-            <div className="text-[13px] font-bold uppercase tracking-widest text-[#7290AA] mb-6" style={{ fontFamily: "var(--font-dm)" }}>
+            <div className="text-[14.5px] font-bold uppercase tracking-widest text-[#7290AA] mb-6" style={{ fontFamily: "var(--font-dm)" }}>
               Representative Layer Reliability
             </div>
             <Stagger className="space-y-5">
@@ -46,11 +46,11 @@ export default function NetworkReliability() {
                   <div className="flex items-center justify-between mb-1.5">
                     <div className="flex items-center gap-2.5">
                       <div className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" />
-                      <span className="text-[13.5px] text-[#3A5068] font-medium" style={{ fontFamily: "var(--font-dm)" }}>
+                      <span className="text-[15px] text-[#3A5068] font-medium" style={{ fontFamily: "var(--font-dm)" }}>
                         {l.name}
                       </span>
                     </div>
-                    <span className="text-[13px] font-bold text-[#1B65A6]" style={{ fontFamily: "var(--font-syne)" }}>
+                    <span className="text-[14.5px] font-bold text-[#1B65A6]" style={{ fontFamily: "var(--font-syne)" }}>
                       <Counter value={`${l.uptime}%`} />
                     </span>
                   </div>
@@ -60,7 +60,7 @@ export default function NetworkReliability() {
                 </StaggerItem>
               ))}
             </Stagger>
-            <p className="text-[11.5px] text-[#7290AA] mt-6 leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+            <p className="text-[12.5px] text-[#7290AA] mt-6 leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
               Figures shown are representative targets for a well-designed, redundant
               installation and vary by site and service mix.
             </p>
@@ -78,10 +78,10 @@ export default function NetworkReliability() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-[15px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>
+                    <h3 className="text-[16.5px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>
                       {p.title}
                     </h3>
-                    <p className="text-[13.5px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                    <p className="text-[15px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                       {p.desc}
                     </p>
                   </div>

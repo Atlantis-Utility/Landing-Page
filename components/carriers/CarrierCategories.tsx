@@ -135,7 +135,7 @@ export default function CarrierCategories() {
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-white border border-[#E2EDF6] rounded-2xl px-4 py-3 shadow-md hidden sm:flex items-center gap-2.5">
                   <div className="w-2 h-2 rounded-full bg-green-500 pulse-dot flex-shrink-0" />
-                  <span className="text-[12px] font-semibold text-[#0E1A28]" style={{ fontFamily: "var(--font-dm)" }}>
+                  <span className="text-[13px] font-semibold text-[#0E1A28]" style={{ fontFamily: "var(--font-dm)" }}>
                     Actively monitored
                   </span>
                 </div>
@@ -144,22 +144,22 @@ export default function CarrierCategories() {
               {/* Content */}
               <Reveal delay={0.1}>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className={`text-[11px] font-bold px-3 py-1.5 rounded-full border ${c.tagCls}`} style={{ fontFamily: "var(--font-dm)" }}>
+                  <span className={`text-[12px] font-bold px-3 py-1.5 rounded-full border ${c.tagCls}`} style={{ fontFamily: "var(--font-dm)" }}>
                     {c.tag}
                   </span>
                 </div>
 
-                <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-2"
+                <h2 className="text-3xl sm:text-4xl lg:text-[37.5px] font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-2"
                   style={{ fontFamily: "var(--font-syne)" }}>
                   {c.title}
                 </h2>
-                <p className="text-[15px] font-semibold text-[#1B65A6] mb-5" style={{ fontFamily: "var(--font-dm)" }}>
+                <p className="text-[16.5px] font-semibold text-[#1B65A6] mb-5" style={{ fontFamily: "var(--font-dm)" }}>
                   {c.subtitle}
                 </p>
 
                 <div className="space-y-3 mb-7">
                   {c.body.map((para, i) => (
-                    <p key={i} className="text-[14.5px] text-[#4A6278] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                    <p key={i} className="text-[16px] text-[#4A6278] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                       {para}
                     </p>
                   ))}
@@ -173,7 +173,7 @@ export default function CarrierCategories() {
                           <path d="M2 5l2 2 4-4" stroke="#1B65A6" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </div>
-                      <span className="text-[13.5px] text-[#3A5068] font-medium" style={{ fontFamily: "var(--font-dm)" }}>
+                      <span className="text-[15px] text-[#3A5068] font-medium" style={{ fontFamily: "var(--font-dm)" }}>
                         {f}
                       </span>
                     </li>

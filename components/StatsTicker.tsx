@@ -18,18 +18,18 @@ export default function StatsTicker() {
         {doubled.map((s, i) => (
           <div key={i} className="inline-flex items-center gap-3 px-8">
             <span
-              className="text-[13px] font-bold text-white"
+              className="text-[14.5px] font-bold text-white"
               style={{ fontFamily: "var(--font-syne)" }}
             >
               {s.value}
             </span>
             <span
-              className="text-[12px] text-neutral-500"
+              className="text-[13px] text-neutral-500"
               style={{ fontFamily: "var(--font-dm-sans)" }}
             >
               {s.label}
             </span>
-            <span className="text-neutral-700 text-[10px]">|</span>
+            <span className="text-neutral-700 text-[11px]">|</span>
           </div>
         ))}
       </div>

@@ -52,7 +52,7 @@ export default function SampleTestimonials() {
 
         <Reveal className="text-center max-w-2xl mx-auto mb-14">
           <p className="section-label justify-center mb-3"><span>What Clients Say</span></p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight"
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight leading-tight"
             style={{ fontFamily: "var(--font-syne)" }}>
             Trusted by businesses
             <br />across California.
@@ -64,20 +64,20 @@ export default function SampleTestimonials() {
             <StaggerItem key={i}>
               <div className="card p-7 bg-white flex flex-col gap-5 h-full">
                 <Stars count={t.rating} />
-                <p className="text-[14px] text-[#4A6278] leading-relaxed flex-1"
+                <p className="text-[15.5px] text-[#4A6278] leading-relaxed flex-1"
                   style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <div className="flex items-center gap-3 pt-4 border-t border-[#E2EDF6]">
-                  <div className="w-9 h-9 rounded-full bg-[#EEF4FB] flex items-center justify-center text-[#1B65A6] text-[12px] font-bold flex-shrink-0"
+                  <div className="w-9 h-9 rounded-full bg-[#EEF4FB] flex items-center justify-center text-[#1B65A6] text-[13px] font-bold flex-shrink-0"
                     style={{ fontFamily: "var(--font-syne)" }}>
                     {t.initials}
                   </div>
                   <div>
-                    <div className="text-[13px] font-bold text-[#0E1A28]" style={{ fontFamily: "var(--font-syne)" }}>
+                    <div className="text-[14.5px] font-bold text-[#0E1A28]" style={{ fontFamily: "var(--font-syne)" }}>
                       {t.author}
                     </div>
-                    <div className="text-[11.5px] text-[#7290AA]" style={{ fontFamily: "var(--font-dm)" }}>
+                    <div className="text-[12.5px] text-[#7290AA]" style={{ fontFamily: "var(--font-dm)" }}>
                       {t.role}, {t.company}
                     </div>
                   </div>

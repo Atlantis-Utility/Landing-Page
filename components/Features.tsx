@@ -90,14 +90,14 @@ export default function Features() {
         {/* Section header */}
         <div className="max-w-2xl mb-16">
           <div
-            className="inline-flex items-center gap-2 text-accent text-[11px] font-medium uppercase tracking-widest mb-5"
+            className="inline-flex items-center gap-2 text-accent text-[12px] font-medium uppercase tracking-widest mb-5"
             style={{ fontFamily: "var(--font-dm-sans)" }}
           >
             <div className="w-6 h-[1px] bg-accent" />
             Platform capabilities
           </div>
           <h2
-            className="text-4xl md:text-5xl font-bold text-white leading-tight tracking-tight mb-5"
+            className="text-5xl md:text-6xl font-bold text-white leading-tight tracking-tight mb-5"
             style={{ fontFamily: "var(--font-syne)" }}
           >
             Everything your NOC team needs.
@@ -105,7 +105,7 @@ export default function Features() {
             <span className="text-neutral-500">Nothing it does not.</span>
           </h2>
           <p
-            className="text-neutral-400 text-[16px] leading-relaxed"
+            className="text-neutral-400 text-[17.5px] leading-relaxed"
             style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 300 }}
           >
             Purpose-built for telecom carriers and managed service providers. Atlantis Utility
@@ -125,20 +125,20 @@ export default function Features() {
                   {f.icon}
                 </div>
                 <span
-                  className="text-[10px] font-medium text-neutral-500 bg-neutral-800 px-2.5 py-1 rounded-full uppercase tracking-widest"
+                  className="text-[11px] font-medium text-neutral-500 bg-neutral-800 px-2.5 py-1 rounded-full uppercase tracking-widest"
                   style={{ fontFamily: "var(--font-dm-sans)" }}
                 >
                   {f.tag}
                 </span>
               </div>
               <h3
-                className="text-[16px] font-semibold text-white mb-2.5 leading-snug"
+                className="text-[17.5px] font-semibold text-white mb-2.5 leading-snug"
                 style={{ fontFamily: "var(--font-syne)" }}
               >
                 {f.title}
               </h3>
               <p
-                className="text-[13.5px] text-neutral-400 leading-relaxed"
+                className="text-[15px] text-neutral-400 leading-relaxed"
                 style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 300 }}
               >
                 {f.desc}

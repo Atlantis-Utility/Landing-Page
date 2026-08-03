@@ -38,12 +38,12 @@ export default function TrustReasons() {
           {/* Left */}
           <Reveal className="lg:sticky lg:top-28">
             <p className="section-label mb-3">Our Difference</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-5"
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-5"
               style={{ fontFamily: "var(--font-syne)" }}>
               The Atlantis Utility
               <br />Advantage
             </h2>
-            <p className="text-[#4A6278] text-[15px] leading-relaxed mb-8"
+            <p className="text-[#4A6278] text-[16.5px] leading-relaxed mb-8"
               style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
               We are not a national carrier or a big-box reseller. We are a local team
               that knows California businesses and builds solutions that fit.
@@ -51,7 +51,7 @@ export default function TrustReasons() {
 
             {/* Mini CTA */}
             <a href="#contact"
-              className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px] shadow-sm mb-8"
+              className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-6 py-3.5 rounded-xl transition-all text-[15.5px] shadow-sm mb-8"
               style={{ fontFamily: "var(--font-dm)" }}>
               Talk to a local expert
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -70,10 +70,10 @@ export default function TrustReasons() {
                     {r.icon}
                   </div>
                   <div>
-                    <div className="text-[14px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>
+                    <div className="text-[15.5px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>
                       {r.title}
                     </div>
-                    <div className="text-[13px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                    <div className="text-[14.5px] text-[#7290AA] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                       {r.desc}
                     </div>
                   </div>

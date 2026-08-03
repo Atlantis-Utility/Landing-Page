@@ -18,12 +18,12 @@ export default function Products() {
         {/* Header */}
         <Reveal className="max-w-2xl mb-14">
           <p className="section-label mb-3">Hardware and Technology</p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-4"
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-4"
             style={{ fontFamily: "var(--font-syne)" }}>
             Hardware and Technology
             <br />Products We Install
           </h2>
-          <p className="text-[#4A6278] text-[15px] leading-relaxed"
+          <p className="text-[#4A6278] text-[16.5px] leading-relaxed"
             style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
             We supply and professionally install the hardware that powers California businesses,
             from VoIP phones to security systems. Performance, reliability, peace of mind.
@@ -37,17 +37,17 @@ export default function Products() {
               <div className="card cursor-default bg-white h-full overflow-hidden flex flex-col">
                 <div className="relative aspect-[16/10] w-full">
                   <Image src={p.image} alt={p.title} fill className="object-cover" />
-                  <span className={`absolute top-3 right-3 text-[10px] font-semibold px-2.5 py-1 rounded-full border shadow-sm ${p.tagCls}`}
+                  <span className={`absolute top-3 right-3 text-[11px] font-semibold px-2.5 py-1 rounded-full border shadow-sm ${p.tagCls}`}
                     style={{ fontFamily: "var(--font-dm)" }}>
                     {p.tag}
                   </span>
                 </div>
                 <div className="p-6 flex-1">
-                  <h3 className="text-[15px] font-bold text-[#0E1A28] leading-snug mb-2"
+                  <h3 className="text-[16.5px] font-bold text-[#0E1A28] leading-snug mb-2"
                     style={{ fontFamily: "var(--font-syne)" }}>
                     {p.title}
                   </h3>
-                  <p className="text-[13px] text-[#7290AA] leading-relaxed"
+                  <p className="text-[14.5px] text-[#7290AA] leading-relaxed"
                     style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                     {p.desc}
                   </p>
@@ -59,7 +59,7 @@ export default function Products() {
 
         <Reveal delay={0.1} className="mt-10">
           <a href="/products"
-            className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-7 py-3.5 rounded-xl transition-all text-[14px] shadow-sm"
+            className="inline-flex items-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-semibold px-7 py-3.5 rounded-xl transition-all text-[15.5px] shadow-sm"
             style={{ fontFamily: "var(--font-dm)" }}>
             Learn about our products
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">

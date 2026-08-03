@@ -19,7 +19,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         className="w-full flex items-center justify-between gap-4 px-5 py-5 text-left bg-white hover:bg-[#F9FBFD] transition-colors"
         onClick={() => setOpen(!open)}
       >
-        <span className="text-[14.5px] font-semibold text-[#0E1A28] leading-snug"
+        <span className="text-[16px] font-semibold text-[#0E1A28] leading-snug"
           style={{ fontFamily: "var(--font-dm)" }}>
           {q}
         </span>
@@ -30,7 +30,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         </span>
       </button>
       <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-40" : "max-h-0"}`}>
-        <p className="px-5 pb-5 text-[13.5px] text-[#4A6278] leading-relaxed border-t border-[#E2EDF6] pt-4"
+        <p className="px-5 pb-5 text-[15px] text-[#4A6278] leading-relaxed border-t border-[#E2EDF6] pt-4"
           style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
           {a}
         </p>
@@ -60,7 +60,7 @@ export default function FAQ() {
 
         <Reveal className="text-center mb-12">
           <p className="section-label justify-center mb-3"><span>Common Questions</span></p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight"
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight"
             style={{ fontFamily: "var(--font-syne)" }}>
             Frequently Asked Questions
           </h2>
@@ -71,11 +71,11 @@ export default function FAQ() {
         </Stagger>
 
         <Reveal delay={0.1} className="mt-10 text-center">
-          <p className="text-[14px] text-[#7290AA] mb-4" style={{ fontFamily: "var(--font-dm)" }}>
+          <p className="text-[15.5px] text-[#7290AA] mb-4" style={{ fontFamily: "var(--font-dm)" }}>
             Still have questions? We are happy to help.
           </p>
           <a href="tel:8056582329"
-            className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] text-[#1B65A6] font-semibold px-6 py-3.5 rounded-xl transition-all text-[14px]"
+            className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] text-[#1B65A6] font-semibold px-6 py-3.5 rounded-xl transition-all text-[15.5px]"
             style={{ fontFamily: "var(--font-dm)" }}>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
               <path fillRule="evenodd" clipRule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.279-.09.408a12.035 12.035 0 0 0 5.61 5.61c.129.074.307.045.408-.09l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.819V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"/>

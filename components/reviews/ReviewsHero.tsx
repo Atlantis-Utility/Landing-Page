@@ -31,7 +31,7 @@ export default function ReviewsHero() {
 
       <div className="max-w-7xl mx-auto px-2.5 sm:px-4 lg:px-5 xl:px-8 relative">
         {/* Breadcrumb */}
-        <div className="flex items-center gap-2 text-[12px] text-[#7290AA] mb-8" style={{ fontFamily: "var(--font-dm)" }}>
+        <div className="flex items-center gap-2 text-[13px] text-[#7290AA] mb-8" style={{ fontFamily: "var(--font-dm)" }}>
           <a href="/" className="hover:text-[#1B65A6] transition-colors">Home</a>
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
           <span className="text-[#3A5068] font-medium">Reviews</span>
@@ -40,13 +40,13 @@ export default function ReviewsHero() {
         <div className="grid lg:grid-cols-3 gap-10 items-end">
           <Reveal className="lg:col-span-2 max-w-2xl">
             <p className="section-label mb-4">Customer Reviews</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.06] mb-6"
+            <h1 className="text-5xl sm:text-6xl lg:text-[59.5px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.06] mb-6"
               style={{ fontFamily: "var(--font-syne)" }}>
               What businesses say
               <br />
               <span className="text-[#1B65A6]">about working with us.</span>
             </h1>
-            <p className="text-[#4A6278] text-[17px] leading-relaxed max-w-xl"
+            <p className="text-[#4A6278] text-[18.5px] leading-relaxed max-w-xl"
               style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
               A closer look at how California businesses have used our VoIP, internet, and
               managed IT services &mdash; in their own words.
@@ -55,11 +55,11 @@ export default function ReviewsHero() {
 
           <Reveal delay={0.1}>
             <div className="card p-7 bg-white flex flex-col items-center text-center">
-              <div className="text-5xl font-extrabold text-[#0E1A28] mb-2" style={{ fontFamily: "var(--font-syne)" }}>
+              <div className="text-6xl font-extrabold text-[#0E1A28] mb-2" style={{ fontFamily: "var(--font-syne)" }}>
                 {avg.toFixed(1)}
               </div>
               <Stars count={avg} size={18} />
-              <p className="text-[12.5px] text-[#7290AA] mt-3" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+              <p className="text-[14px] text-[#7290AA] mt-3" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                 Average rating from {reviews.length} sample reviews below
               </p>
             </div>

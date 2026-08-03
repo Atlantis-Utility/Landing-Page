@@ -18,17 +18,17 @@ export default function ProductsCTA() {
 
           {/* Left */}
           <Reveal>
-            <div className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] text-[#1B65A6] text-[12px] font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm"
+            <div className="inline-flex items-center gap-2 bg-white border border-[#C0D2E5] text-[#1B65A6] text-[13px] font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm"
               style={{ fontFamily: "var(--font-dm)" }}>
               <span className="w-1.5 h-1.5 rounded-full bg-green-500 pulse-dot" />
               Local installation team
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-5"
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0E1A28] tracking-tight leading-tight mb-5"
               style={{ fontFamily: "var(--font-syne)" }}>
               Ready to upgrade your
               <br />hardware infrastructure?
             </h2>
-            <p className="text-[#4A6278] text-[15px] leading-relaxed mb-8"
+            <p className="text-[#4A6278] text-[16.5px] leading-relaxed mb-8"
               style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
               Our local California team handles everything from product selection and
               procurement through professional installation and ongoing support. No
@@ -36,7 +36,7 @@ export default function ProductsCTA() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <MotionLink href="tel:8056582329"
-                className="inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-bold px-7 py-4 rounded-xl transition-all text-[14.5px]"
+                className="inline-flex items-center justify-center gap-2 bg-[#1B65A6] hover:bg-[#134d80] text-white font-bold px-7 py-4 rounded-xl transition-all text-[16px]"
                 style={{ fontFamily: "var(--font-dm)" }}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                   <path fillRule="evenodd" clipRule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.279-.09.408a12.035 12.035 0 0 0 5.61 5.61c.129.074.307.045.408-.09l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.819V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"/>
@@ -44,7 +44,7 @@ export default function ProductsCTA() {
                 (805) 658-2329
               </MotionLink>
               <MotionLink href="/"
-                className="inline-flex items-center justify-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-7 py-4 rounded-xl transition-all text-[14.5px]"
+                className="inline-flex items-center justify-center gap-2 bg-white border border-[#C0D2E5] hover:border-[#1B65A6] hover:text-[#1B65A6] text-[#3A5068] font-semibold px-7 py-4 rounded-xl transition-all text-[16px]"
                 style={{ fontFamily: "var(--font-dm)" }}>
                 Back to home
               </MotionLink>
@@ -76,10 +76,10 @@ export default function ProductsCTA() {
                     {item.icon}
                   </div>
                   <div>
-                    <div className="text-[14px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>
+                    <div className="text-[15.5px] font-bold text-[#0E1A28] mb-1" style={{ fontFamily: "var(--font-syne)" }}>
                       {item.title}
                     </div>
-                    <div className="text-[13px] text-[#4A6278] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
+                    <div className="text-[14.5px] text-[#4A6278] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
                       {item.desc}
                     </div>
                   </div>
