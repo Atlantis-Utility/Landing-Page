@@ -11,8 +11,8 @@ export default function NewsList() {
             <StaggerItem key={item.title}>
               <article className="card bg-white overflow-hidden border-t-4 border-t-[#0E1A28]">
                 {item.image && (
-                  <div className="w-full aspect-[21/9] bg-[#F5F8FC] border-b border-[#E2EDF6] flex items-center justify-center">
-                    <Image src={item.image} alt={item.title} width={280} height={120} className="w-auto h-auto max-w-[280px] max-h-[110px] object-contain" />
+                  <div className="w-full py-6 bg-[#F5F8FC] border-b border-[#E2EDF6] flex items-center justify-center">
+                    <Image src={item.image} alt={item.title} width={247} height={79} className="w-auto h-auto max-w-[200px] object-contain" />
                   </div>
                 )}
                 <div className="p-8 sm:p-10">
