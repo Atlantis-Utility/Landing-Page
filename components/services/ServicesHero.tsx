@@ -8,9 +8,6 @@ const categories = [
   { label: "LTE Backup",                 href: "#lte-backup-internet" },
   { label: "Cost Reduction",             href: "#telecom-cost-reduction" },
   { label: "Structured Cabling",         href: "#structured-cabling" },
-  { label: "Managed IT (MSP)",           href: "#managed-it" },
-  { label: "Custom Software",            href: "#custom-software" },
-  { label: "Help Desk",                  href: "#help-desk" },
   { label: "Network Configuration",      href: "#network-configuration" },
 ];
 

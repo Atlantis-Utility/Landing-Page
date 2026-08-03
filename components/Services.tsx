@@ -52,27 +52,6 @@ const services = [
     icon: (<svg width="18" height="18" viewBox="0 0 22 22" fill="none"><rect x="3" y="3" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5"/><rect x="13" y="3" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5"/><rect x="8" y="13" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5"/><path d="M6 9v4h5M16 9v4h-5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/></svg>),
   },
   {
-    title: "Managed IT Services (MSP)",
-    desc: "Proactive monitoring, patching, and IT management so your systems just work.",
-    href: "/services#managed-it",
-    image: "/atlantis/managed-it-services.jpg",
-    icon: (<svg width="18" height="18" viewBox="0 0 22 22" fill="none"><rect x="2" y="4" width="18" height="12" rx="2.5" stroke="currentColor" strokeWidth="1.5"/><path d="M8 19h6M11 16v3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/><path d="M6 10l3 3 6-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>),
-  },
-  {
-    title: "Custom Software Development",
-    desc: "Custom applications and integrations built around how your business actually works.",
-    href: "/services#custom-software",
-    image: "/atlantis/cloud-solutions.jpg",
-    icon: (<svg width="18" height="18" viewBox="0 0 22 22" fill="none"><path d="M8 6l-5 5 5 5M14 6l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>),
-  },
-  {
-    title: "Help Desk & Desk Support",
-    desc: "Responsive remote and on-site desk support to keep your team productive.",
-    href: "/services#help-desk",
-    image: "/atlantis/managed-it-services.jpg",
-    icon: (<svg width="18" height="18" viewBox="0 0 22 22" fill="none"><rect x="2" y="3" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.5"/><path d="M8 19h6M11 15v4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/><circle cx="11" cy="9" r="1.5" fill="currentColor"/></svg>),
-  },
-  {
     title: "Network Configuration & Design",
     desc: "Design, configuration, and hardening of switches, routers, firewalls, and Wi-Fi.",
     href: "/services#network-configuration",

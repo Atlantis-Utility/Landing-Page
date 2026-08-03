@@ -104,7 +104,6 @@ export const citySolutions: CitySolution[] = [
       "sip-trunking",
       "high-speed-internet",
       "lte-backup-internet",
-      "managed-it",
       "telecom-cost-reduction",
     ],
     metaDescription:
@@ -169,7 +168,6 @@ export const citySolutions: CitySolution[] = [
       "lte-backup-internet",
       "business-voip",
       "hosted-voip-pbx",
-      "managed-it",
     ],
     metaDescription:
       "Business VoIP, internet, and managed IT solutions for Malibu, CA companies — hospitality, retail, real estate, and remote teams. Reliable connectivity with LTE failover from Atlantis Utility.",

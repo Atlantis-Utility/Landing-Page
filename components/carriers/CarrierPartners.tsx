@@ -15,16 +15,7 @@ export default function CarrierPartners() {
       <div className="max-w-7xl mx-auto px-2.5 sm:px-4 lg:px-5 xl:px-8">
         <Reveal className="text-center max-w-2xl mx-auto mb-10">
           <p className="section-label justify-center mb-3">
-            <span>Carrier Partners</span>
-          </p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E1A28] tracking-tight mb-3"
-            style={{ fontFamily: "var(--font-syne)" }}>
-            Backed by carriers businesses already trust
-          </h2>
-          <p className="text-[#4A6278] text-[16px] leading-relaxed" style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
-            We work directly with major carrier partners to design and provision the wired
-            and wireless connections behind your service, and not all carriers are available
-            in every area.
+            <span>Our Carrier Partners</span>
           </p>
         </Reveal>
 

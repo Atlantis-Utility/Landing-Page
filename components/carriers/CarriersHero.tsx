@@ -1,10 +1,4 @@
-import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
-
-const categories = [
-  { label: "Tier-1 Fiber Backbone",   href: "#fiber-backbone" },
-  { label: "Nationwide LTE Failover", href: "#lte-failover"   },
-  { label: "Voice & SIP Carriers",    href: "#voice-sip"      },
-];
+import { Reveal } from "@/components/motion/Reveal";
 
 export default function CarriersHero() {
   return (
@@ -25,38 +19,21 @@ export default function CarriersHero() {
           <span className="text-[#3A5068] font-medium">Carriers</span>
         </div>
 
-        <Reveal className="max-w-3xl mb-12">
-          <p className="section-label mb-4">Network Infrastructure</p>
+        <Reveal className="max-w-3xl">
+          <p className="section-label mb-4">Carrier Partners</p>
           <h1 className="text-5xl sm:text-6xl lg:text-[61.5px] font-extrabold text-[#0E1A28] tracking-tight leading-[1.06] mb-6"
             style={{ fontFamily: "var(--font-syne)" }}>
-            The network behind
+            Backed by carriers
             <br />
-            <span className="text-[#1B65A6]">every connection we deliver.</span>
+            <span className="text-[#1B65A6]">businesses already trust.</span>
           </h1>
           <p className="text-[#4A6278] text-[18.5px] leading-relaxed max-w-xl"
             style={{ fontFamily: "var(--font-dm)", fontWeight: 300 }}>
-            Atlantis Utility doesn't just sell you a phone system or an internet line —
-            we build on top of carrier-grade infrastructure. Here's a look at the
-            underlying network capability tiers we design around, so you know exactly
-            what's carrying your calls and data.
+            We work directly with major carrier partners to design and provision the wired
+            and wireless connections behind your service. Availability varies by carrier
+            and location, and our team will confirm what's available at your address.
           </p>
         </Reveal>
-
-        {/* Category nav pills */}
-        <Stagger className="flex flex-wrap gap-2.5">
-          {categories.map((c) => (
-            <StaggerItem key={c.label} className="inline-block">
-              <a href={c.href}
-                className="inline-flex items-center gap-1.5 bg-white border border-[#C0D2E5] hover:bg-[#1B65A6] hover:text-white hover:border-[#1B65A6] text-[#1B65A6] text-[14.5px] font-semibold px-4 py-2 rounded-full transition-all duration-150"
-                style={{ fontFamily: "var(--font-dm)" }}>
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                {c.label}
-              </a>
-            </StaggerItem>
-          ))}
-        </Stagger>
       </div>
     </section>
   );

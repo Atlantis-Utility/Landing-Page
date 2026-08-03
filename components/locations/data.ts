@@ -22,7 +22,6 @@ export const locations: Location[] = [
       { label: "Business VoIP", href: "/services#business-voip" },
       { label: "Hosted VoIP PBX", href: "/services#hosted-voip-pbx" },
       { label: "High-Speed Internet", href: "/services#high-speed-internet" },
-      { label: "Managed IT Services (MSP)", href: "/services#managed-it" },
       { label: "Structured Cabling", href: "/services#structured-cabling" },
     ],
   },
@@ -50,8 +49,6 @@ export const locations: Location[] = [
       { label: "High-Speed Internet", href: "/services#high-speed-internet" },
       { label: "Structured Cabling", href: "/services#structured-cabling" },
       { label: "Network Configuration & Design", href: "/services#network-configuration" },
-      { label: "Managed IT Services (MSP)", href: "/services#managed-it" },
-      { label: "Help Desk & Desk Support", href: "/services#help-desk" },
     ],
   },
   {
@@ -64,7 +61,6 @@ export const locations: Location[] = [
       { label: "High-Speed Internet", href: "/services#high-speed-internet" },
       { label: "LTE Backup Internet", href: "/services#lte-backup-internet" },
       { label: "Business VoIP", href: "/services#business-voip" },
-      { label: "Help Desk & Desk Support", href: "/services#help-desk" },
     ],
   },
   {
@@ -77,8 +73,6 @@ export const locations: Location[] = [
       { label: "Hosted VoIP PBX", href: "/services#hosted-voip-pbx" },
       { label: "SIP Trunking", href: "/services#sip-trunking" },
       { label: "Structured Cabling", href: "/services#structured-cabling" },
-      { label: "Custom Software Development", href: "/services#custom-software" },
-      { label: "Managed IT Services (MSP)", href: "/services#managed-it" },
     ],
   },
   {
@@ -104,7 +98,6 @@ export const locations: Location[] = [
     services: [
       { label: "Business VoIP", href: "/services#business-voip" },
       { label: "High-Speed Internet", href: "/services#high-speed-internet" },
-      { label: "Managed IT Services (MSP)", href: "/services#managed-it" },
       { label: "Telecom Cost Reduction", href: "/services#telecom-cost-reduction" },
     ],
   },
@@ -118,7 +111,6 @@ export const locations: Location[] = [
     services: [
       { label: "Business VoIP", href: "/services#business-voip" },
       { label: "High-Speed Internet", href: "/services#high-speed-internet" },
-      { label: "Managed IT Services (MSP)", href: "/services#managed-it" },
       { label: "Telecom Cost Reduction", href: "/services#telecom-cost-reduction" },
     ],
   },

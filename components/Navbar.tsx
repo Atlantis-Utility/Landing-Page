@@ -11,9 +11,6 @@ const servicesLinks = [
   { label: "LTE Backup Internet",               href: "/services#lte-backup-internet" },
   { label: "Telecom Cost Reduction",            href: "/services#telecom-cost-reduction" },
   { label: "Structured Cabling",                href: "/services#structured-cabling" },
-  { label: "Managed IT Services (MSP)",         href: "/services#managed-it" },
-  { label: "Custom Software Development",       href: "/services#custom-software" },
-  { label: "Help Desk & Desk Support",          href: "/services#help-desk" },
   { label: "Network Configuration & Design",    href: "/services#network-configuration" },
 ];
 

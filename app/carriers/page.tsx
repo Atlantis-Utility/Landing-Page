@@ -1,14 +1,12 @@
 import Navbar from "@/components/Navbar";
 import CarriersHero from "@/components/carriers/CarriersHero";
-import CarrierCategories from "@/components/carriers/CarrierCategories";
-import NetworkReliability from "@/components/carriers/NetworkReliability";
 import CarrierPartners from "@/components/carriers/CarrierPartners";
 import { CTABanner, Footer } from "@/components/CtaFooter";
 
 export const metadata = {
-  title: "Carriers & Network Infrastructure | Fiber, LTE & Voice",
+  title: "Carrier Partners | Spectrum, Frontier, T-Mobile, AT&T & Cox",
   description:
-    "A look at the carrier-grade fiber, LTE failover, and voice network infrastructure behind every Atlantis Utility VoIP and internet service in California.",
+    "Atlantis Utility works directly with major carrier partners including Spectrum, Frontier, T-Mobile, AT&T, and Cox to provision the connections behind your service.",
   alternates: { canonical: "/carriers" },
 };
 
@@ -17,8 +15,6 @@ export default function CarriersPage() {
     <main className="min-h-screen bg-white overflow-x-hidden">
       <Navbar />
       <CarriersHero />
-      <CarrierCategories />
-      <NetworkReliability />
       <CarrierPartners />
       <CTABanner />
       <Footer />
