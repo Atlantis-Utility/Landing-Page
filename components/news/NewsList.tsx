@@ -5,14 +5,14 @@ import { Stagger, StaggerItem } from "@/components/motion/Reveal";
 export default function NewsList() {
   return (
     <section className="py-20 sm:py-24 bg-[#F5F8FC]">
-      <div className="max-w-4xl mx-auto px-2.5 sm:px-4 lg:px-5 xl:px-8">
+      <div className="max-w-6xl mx-auto px-2.5 sm:px-4 lg:px-5 xl:px-8">
         <Stagger className="space-y-5">
           {newsItems.map((item) => (
             <StaggerItem key={item.title}>
               <article className="card bg-white overflow-hidden">
                 {item.image && (
-                  <div className="relative w-full aspect-[21/9] bg-[#F5F8FC]">
-                    <Image src={item.image} alt={item.title} fill className="object-contain p-8" />
+                  <div className="w-full aspect-[21/9] bg-[#F5F8FC] border-b border-[#E2EDF6] flex items-center justify-center">
+                    <Image src={item.image} alt={item.title} width={280} height={120} className="w-auto h-auto max-w-[280px] max-h-[110px] object-contain" />
                   </div>
                 )}
                 <div className="p-7">
